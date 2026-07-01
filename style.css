@@ -1,0 +1,1365 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Lora:wght@400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0D0B12;
+    color:white;
+    font-family:"Lora", serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 60px;
+
+    border-bottom:3px solid #6A1B9A;
+}
+
+.logo{
+    font-family:"Cinzel Decorative", serif;
+    color:#E5DE9F;
+    font-size:2.5rem;
+}
+
+.logo-subtitle{
+    font-size:0.8rem;
+    color:#cfcfcf;
+    margin-top:5px;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+}
+
+.nav-links a:hover{
+    color:#E5DE9F;
+}
+
+/* HERO */
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:90vh;
+}
+
+.video-placeholder{
+
+    width:90%;
+    max-width:1200px;
+    height:70vh;
+
+    border:3px dashed #6A1B9A;
+
+    border-radius:25px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.play-icon{
+    font-size:6rem;
+    color:#E5DE9F;
+}
+
+.video-placeholder h1{
+    font-family:"Cinzel Decorative", serif;
+    color:#E5DE9F;
+
+    margin-top:20px;
+}
+
+.video-placeholder p{
+    max-width:600px;
+}
+.section-divider{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:25px;
+
+    width:80%;
+    margin:80px auto;
+}
+
+.divider-line{
+
+    flex:1;
+    height:2px;
+
+    background:linear-gradient(
+        to right,
+        transparent,
+        #6A1B9A,
+        #E5DE9F,
+        #6A1B9A,
+        transparent
+    );
+}
+
+.divider-symbol{
+
+    color:#E5DE9F;
+    font-size:2rem;
+}
+
+/* About me */
+
+#about{
+    padding:120px 10%;
+}
+
+#about h2{
+
+    text-align:center;
+
+    color:#E5DE9F;
+
+    font-family:"Cinzel Decorative", serif;
+
+    font-size:3rem;
+
+    margin-bottom:70px;
+}
+
+.about-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:80px;
+
+    max-width:1400px;
+
+    margin:auto;
+}
+
+/* TEXT */
+
+.about-text{
+
+    width:700px;
+  
+   text-align:center;
+  
+}
+
+.about-text p{
+
+    line-height:2;
+
+    margin-bottom:25px;
+
+    color:#d6d6d6;
+}
+
+/* FOTO */
+
+.about-image{
+
+    width:400px;
+
+    flex-shrink:0;
+}
+
+.image-placeholder{
+
+    width:100%;
+
+    height:650px;
+
+    border:2px solid #6A1B9A;
+
+    border-radius:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:"Cinzel Decorative", serif;
+
+    color:#E5DE9F;
+}
+
+/* TIMELINE */
+
+.timeline{
+
+    margin-top:50px;
+  
+      display:flex;
+    flex-direction:column;
+    align-items:center;
+  
+}
+
+.timeline-item{
+
+    display:flex;
+
+    align-items:baseline;
+
+    justify-content:flex-start;
+
+    width:420px;
+
+    margin-bottom:30px;
+}
+
+.timeline-item span{
+
+    width:90px;
+
+    color:#6A1B9A;
+
+    font-weight:bold;
+
+    font-size:1.3rem;
+
+    text-align:right;
+
+    margin-right:25px;
+}
+
+/* ======================
+   PORTFOLIO
+====================== */
+
+#portfolio{
+    padding:120px 10%;
+}
+
+#portfolio h2{
+
+    text-align:center;
+
+    font-family:"Cinzel Decorative", serif;
+
+    color:#E5DE9F;
+
+    font-size:3rem;
+
+    margin-bottom:40px;
+}
+
+.portfolio-intro{
+
+    text-align:center;
+
+    max-width:800px;
+
+    margin:0 auto 70px auto;
+}
+
+.portfolio-intro p{
+
+    line-height:1.8;
+
+    color:#d6d6d6;
+
+    margin-bottom:15px;
+}
+
+/* Layout */
+
+.portfolio-container{
+
+    display:flex;
+
+    gap:50px;
+
+    align-items:flex-start;
+}
+
+/* Skill Menü */
+
+.skill-menu{
+
+    width:300px;
+
+    border:2px solid #6A1B9A;
+
+    border-radius:25px;
+
+    overflow:hidden;
+}
+
+.skill{
+
+    position:relative;
+
+    padding:22px 22px 22px 45px;
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.08);
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.skill::before{
+
+    content:"◈";
+
+    position:absolute;
+
+    left:18px;
+
+    color:#E5DE9F;
+
+    opacity:0;
+}
+
+.skill:hover::before,
+.skill.active::before{
+
+    opacity:1;
+}
+
+.skill:hover{
+
+    background:
+    rgba(106,27,154,0.15);
+
+    color:#E5DE9F;
+}
+
+.skill.active{
+
+    background:
+    rgba(106,27,154,0.25);
+
+    color:#E5DE9F;
+
+    border-left:
+    4px solid #E5DE9F;
+}
+
+/* Showcase */
+
+.portfolio-showcase{
+
+    flex:1;
+}
+
+.showcase-image{
+
+    height:450px;
+
+    border:2px solid #6A1B9A;
+
+    border-radius:25px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:
+    "Cinzel Decorative", serif;
+
+    color:#E5DE9F;
+
+    font-size:1.8rem;
+
+    margin-bottom:30px;
+}
+
+.showcase-info{
+
+    border:2px solid #6A1B9A;
+
+    border-radius:25px;
+
+    padding:30px;
+}
+
+.showcase-info h3{
+
+    font-family:
+    "Cinzel Decorative", serif;
+
+    color:#E5DE9F;
+
+    margin-bottom:20px;
+}
+
+.showcase-info p{
+
+    color:#d6d6d6;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+}
+
+.software-tags{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
+.software-tags span{
+
+    border:1px solid #E5DE9F;
+
+    color:#E5DE9F;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+}
+
+/* ======================
+   VTUBER PROJECT
+====================== */
+
+#vtuber{
+
+    padding:120px 10%;
+}
+
+#vtuber h2{
+
+    text-align:center;
+
+    font-family:"Cinzel Decorative", serif;
+
+    color:#E5DE9F;
+
+    font-size:3rem;
+
+    margin-bottom:80px;
+}
+
+.vtuber-top{
+
+    display:flex;
+
+    gap:60px;
+
+    align-items:flex-start;
+
+    margin-bottom:60px;
+}
+
+/* TEXT */
+
+.vtuber-text{
+
+    flex:1;
+}
+
+.vtuber-text h3{
+
+    color:#E5DE9F;
+
+    font-family:"Cinzel Decorative", serif;
+
+    margin-bottom:25px;
+}
+
+.vtuber-text p{
+
+    line-height:2;
+
+    color:#d6d6d6;
+
+    margin-bottom:20px;
+}
+
+/* VIDEO */
+
+.vtuber-video{
+
+    width:600px;
+
+    height:340px;
+
+    border:2px solid #6A1B9A;
+
+    border-radius:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#E5DE9F;
+
+    font-family:"Cinzel Decorative", serif;
+}
+
+/* SHOWCASE */
+
+.vtuber-showcase{
+
+    width:100%;
+
+    height:500px;
+
+    border:2px solid #6A1B9A;
+
+    border-radius:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#E5DE9F;
+
+    font-family:"Cinzel Decorative", serif;
+
+    font-size:2rem;
+}
+
+
+/* ======================
+   CHARACTER ART
+====================== */
+
+/* =========================
+   GLOBAL
+========================= */
+
+body{
+...
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+...
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+#hero{
+...
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+#about{
+...
+}
+
+
+/* =========================
+   PORTFOLIO
+========================= */
+
+#portfolio{
+...
+}
+
+
+/* =========================
+   CHARACTER ART
+========================= */
+
+#character-art{
+
+    width:100%;
+    padding:120px 8%;
+    background:#0D0B12;
+
+}
+
+#character-art .section-title{
+
+    text-align:center;
+    color:#F5E09F;
+    font-family:'Cinzel Decorative',serif;
+    font-size:3.5rem;
+    margin-bottom:70px;
+
+}
+
+
+/*======================================
+VIEWER
+======================================*/
+
+.character-viewer{
+
+    position:relative;
+
+    width:100%;
+    max-width:1400px;
+
+    height:700px;
+
+    margin:auto;
+
+    overflow:hidden;
+
+    border:2px dashed #6A1B9A;
+
+    border-radius:25px;
+
+    background:#0D0B12;
+
+}
+
+
+/*======================================
+ARTWORK
+======================================*/
+
+#skinArtwork{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.4s ease;
+
+}
+
+
+/*======================================
+OVERLAY
+======================================*/
+
+.artwork-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        rgba(13,11,18,.92) 0%,
+
+        rgba(13,11,18,.70) 28%,
+
+        rgba(13,11,18,.30) 55%,
+
+        rgba(13,11,18,.08) 75%,
+
+        rgba(13,11,18,0) 100%
+
+    );
+
+}
+
+
+/*======================================
+TEXT
+======================================*/
+
+.skin-info{
+
+    position:absolute;
+
+    z-index:5;
+
+    left:70px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:420px;
+
+}
+
+.skin-category{
+
+    display:block;
+
+    color:#F5E09F;
+
+    font-size:.9rem;
+
+    letter-spacing:5px;
+
+    margin-bottom:15px;
+
+    text-transform:uppercase;
+
+}
+
+#skinTitle{
+
+    color:#F5E09F;
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:3.5rem;
+
+    margin-bottom:25px;
+
+}
+
+#skinDescription{
+
+    color:white;
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+
+}
+
+
+/*======================================
+ARROWS
+======================================*/
+
+.arrow{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    border:none;
+
+    background:none;
+
+    color:#F5E09F;
+
+    font-size:2.4rem;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    z-index:20;
+
+}
+
+.arrow:hover{
+
+    color:#6A1B9A;
+
+    transform:translateY(-50%) scale(1.15);
+
+}
+
+.left{
+
+    left:35px;
+
+}
+
+.right{
+
+    right:35px;
+
+}
+
+/*======================================
+SKIN SELECTOR
+======================================*/
+
+.skin-selector{
+
+    width:100%;
+
+    max-width:1400px;
+
+    margin:35px auto 0;
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:18px;
+
+}
+
+
+/*======================================
+SKIN BUTTON
+======================================*/
+
+.skin-button{
+
+    background:#14111C;
+
+    border:2px solid transparent;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    padding:0;
+
+    position:relative;
+
+}
+
+
+/*======================================
+THUMBNAIL
+======================================*/
+
+.skin-button img{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+
+/*======================================
+NAME
+======================================*/
+
+.skin-button span{
+
+    display:block;
+
+    padding:12px 10px;
+
+    text-align:center;
+
+    color:#FFFFFF;
+
+    font-size:.9rem;
+
+    font-family:'Lora',serif;
+
+    background:#0D0B12;
+
+}
+
+
+/*======================================
+HOVER
+======================================*/
+
+.skin-button:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#6A1B9A;
+
+    box-shadow:
+
+        0 0 20px rgba(106,27,154,.55);
+
+}
+
+
+/*======================================
+ACTIVE
+======================================*/
+
+.skin-button.active{
+
+    border-color:#6A1B9A;
+
+    box-shadow:
+
+        0 0 25px rgba(106,27,154,.9);
+
+}
+
+
+/*======================================
+ACTIVE NAME
+======================================*/
+
+.skin-button.active span{
+
+    color:#F5E09F;
+
+}
+
+
+/*======================================
+ACTIVE IMAGE
+======================================*/
+
+.skin-button.active img{
+
+    transform:scale(1.04);
+
+}
+
+.skin-button img{
+
+    transition:.35s;
+
+}
+
+
+/*======================================
+FADE ANIMATION
+======================================*/
+
+.fade{
+
+    opacity:0;
+
+    transform:scale(1.03);
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+
+/*======================================
+SMOOTH TRANSITIONS
+======================================*/
+
+#skinArtwork,
+#skinTitle,
+#skinDescription{
+
+    transition:.35s ease;
+
+}
+
+/*======================================
+RESPONSIVE
+======================================*/
+
+/* Laptop */
+@media (max-width:1200px){
+
+    .character-viewer{
+
+        height:600px;
+
+    }
+
+    .skin-info{
+
+        width:360px;
+
+        left:50px;
+
+    }
+
+    #skinTitle{
+
+        font-size:2.8rem;
+
+    }
+
+}
+
+
+/* Tablet */
+@media (max-width:900px){
+
+    .character-viewer{
+
+        height:500px;
+
+    }
+
+    .skin-info{
+
+        width:320px;
+
+        left:35px;
+
+    }
+
+    #skinTitle{
+
+        font-size:2.3rem;
+
+    }
+
+    #skinDescription{
+
+        font-size:.95rem;
+
+        line-height:1.7;
+
+    }
+
+}
+
+
+/*======================================
+MOBILE
+======================================*/
+
+@media (max-width:768px){
+
+    .character-viewer{
+
+        height:420px;
+
+    }
+
+    .skin-info{
+
+        width:80%;
+
+        left:25px;
+
+    }
+
+    .skin-category{
+
+        font-size:.75rem;
+
+        letter-spacing:3px;
+
+    }
+
+    #skinTitle{
+
+        font-size:1.9rem;
+
+        margin-bottom:15px;
+
+    }
+
+    #skinDescription{
+
+        font-size:.9rem;
+
+    }
+
+    .arrow{
+
+        font-size:1.8rem;
+
+    }
+
+    .left{
+
+        left:15px;
+
+    }
+
+    .right{
+
+        right:15px;
+
+    }
+
+
+    /* Skin Selector */
+
+    .skin-selector{
+
+        display:flex;
+
+        overflow-x:auto;
+
+        gap:15px;
+
+        padding-bottom:15px;
+
+        scroll-behavior:smooth;
+
+        scrollbar-width:none;
+
+    }
+
+    .skin-selector::-webkit-scrollbar{
+
+        display:none;
+
+    }
+
+    .skin-button{
+
+        min-width:150px;
+
+        flex-shrink:0;
+
+    }
+
+}
+
+
+/*======================================
+KLEINE HANDYS
+======================================*/
+
+@media (max-width:480px){
+
+    .character-viewer{
+
+        height:360px;
+
+        border-radius:18px;
+
+    }
+
+    .skin-info{
+
+        left:18px;
+
+        bottom:20px;
+
+        width:85%;
+
+    }
+
+    #skinTitle{
+
+        font-size:1.6rem;
+
+    }
+
+    #skinDescription{
+
+        display:none;
+
+    }
+
+    .skin-button{
+
+        min-width:135px;
+
+    }
+
+}
+
+
+.wave-divider{
+
+    height:140px;
+
+    width:120px;
+
+    position:relative;
+}
+
+.wave-divider::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:#6A1B9A;
+
+    border-radius:50px;
+
+    transform:translateX(-50%);
+}
+
+.wave-divider::after{
+
+    content:"✦";
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%, -50%);
+
+    color:#E5DE9F;
+
+    font-size:1.4rem;
+}
+
+/* ======================
+   CONTACT
+====================== */
+
+#contact{
+
+    padding:120px 10%;
+}
+
+#contact h2{
+
+    text-align:center;
+
+    font-family:"Cinzel Decorative", serif;
+
+    color:#E5DE9F;
+
+    font-size:3rem;
+
+    margin-bottom:80px;
+}
+
+.contact-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:100px;
+}
+
+.contact-info{
+
+    flex:1;
+}
+
+.contact-info h3{
+
+    color:#E5DE9F;
+
+    font-family:"Cinzel Decorative", serif;
+
+    margin-bottom:25px;
+}
+
+.contact-info p{
+
+    color:#d6d6d6;
+
+    line-height:2;
+
+    margin-bottom:20px;
+}
+
+.contact-details{
+
+    margin-top:40px;
+}
+
+.contact-item{
+
+    margin-bottom:25px;
+
+    line-height:1.8;
+}
+
+/* SOCIALS */
+
+.social-section{
+
+    width:500px;
+}
+
+.social-section h3{
+
+    text-align:center;
+
+    color:#E5DE9F;
+
+    font-family:"Cinzel Decorative", serif;
+
+    margin-bottom:30px;
+}
+
+.social-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+    gap:25px;
+}
+
+.social-card{
+
+    height:180px;
+
+    border:2px solid #6A1B9A;
+
+    border-radius:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#E5DE9F;
+
+    font-family:"Cinzel Decorative", serif;
+
+    transition:0.3s;
+}
+
+.social-card:hover{
+
+    border-color:#E5DE9F;
+
+    transform:translateY(-5px);
+}
