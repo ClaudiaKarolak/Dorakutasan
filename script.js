@@ -89,6 +89,64 @@ skills.forEach(item => {
     }
 }
 
+
+
+/* ==========================================
+   CONCEPT ART ZOOM
+========================================== */
+
+const conceptImage = document.getElementById("conceptImage");
+
+function zoomConcept(scale, x, y){
+
+    conceptImage.style.transformOrigin = `${x}% ${y}%`;
+    conceptImage.style.transform = `scale(${scale})`;
+
+}
+
+document.querySelector(".front").addEventListener("click",()=>{
+
+    zoomConcept(2.2,14,28);
+
+});
+
+document.querySelector(".back").addEventListener("click",()=>{
+
+    zoomConcept(2.2,14,77);
+
+});
+
+document.querySelector(".left").addEventListener("click",()=>{
+
+    zoomConcept(2.2,46,30);
+
+});
+
+document.querySelector(".right").addEventListener("click",()=>{
+
+    zoomConcept(2.2,46,77);
+
+});
+
+document.querySelector(".face").addEventListener("click",()=>{
+
+    zoomConcept(3.3,82,22);
+
+});
+
+document.querySelector(".backface").addEventListener("click",()=>{
+
+    zoomConcept(3.3,82,76);
+
+});
+
+document.querySelector(".reset").addEventListener("click",()=>{
+
+    zoomConcept(1,50,50);
+
+});
+
+
 /*======================================
 DORAKUTASAN SKINS
 ======================================*/
