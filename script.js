@@ -96,64 +96,64 @@ DORAKUTASAN SKINS
 const skins = [
 
 {
-    title: "Standard",
-    category: "DORAKUTASAN",
-    description: "Die Hauptversion meines VTuber-Charakters.",
+    name: "Dorakutasan",
+    subtitle: "LEAGUE COLLECTION",
+description: "Inspiriert von Setts unaufhaltsamer Kampfeslust verkörpert Dorakutasan pure Entschlossenheit und den unerschütterlichen Glauben daran, jede Herausforderung überwinden zu können. Als Kämpferin schreckt sie vor keinem Gegner zurück und begegnet jedem Hindernis mit Mut, Disziplin und einem eisernen Willen. Jeder Kampf ist für sie eine Gelegenheit, stärker zu werden und über sich hinauszuwachsen. Dieses Design ist die ursprüngliche Version von Dorakutasan und bildet die Grundlage für alle späteren Varianten, die unterschiedliche Seiten ihrer Persönlichkeit und ihrer Leidenschaften widerspiegeln."
     image: "images/Dorakutasan Normal.png",
-    thumb: "images/Dorakutasan Normal.png"
+    thumb: "images/Dorakutasan icon.png"
 },
 
 {
-    title: "Pool Party",
-    category: "LEAGUE COLLECTION",
-    description: "Sommerlicher Skin mit Strand-Feeling.",
-    image: "images/Pool Party Doralutasan.png",
-    thumb: "images/Pool Party Doralutasan.png"
+    name: "Pool Party Dorakutasan",
+    subtitle: "LEAGUE COLLECTION",
+    description: "Wenn die Sonne am höchsten steht, tauscht Pool Party Dorakutasan das Schlachtfeld gegen den Strand. Mit einem kühlen Drink in der Hand genießt sie die Ruhe im Schatten, immer bereit, den perfekten Moment auszukosten. Doch der entspannte Eindruck täuscht, beginnt die Wasserschlacht, stürzt sie sich ohne zu zögern ins Getümmel und sorgt mit ihrer energiegeladenen Art dafür, dass niemand trocken bleibt. Zwischen Gelassenheit und Chaos fühlt sich Pool Party Dorakutasan am wohlsten.",
+    image: "images/Pool Party Dorakutasan.png",
+    thumb: "images/Pool Party icon.png"
 },
 
 {
-    title: "Firecracker",
-    category: "LEAGUE COLLECTION",
-    description: "Inspiriert vom chinesischen Feuerwerksfest.",
+    name: "Firecracker Dorakutasan",
+    subtitle: "LEAGUE COLLECTION",
+    description: "Mit der Energie der traditionellen Drachentänze bringt Firecracker Dorakutasan jede Feier zum Leuchten. Wo sie auftaucht, erfüllen Funken, Farben und Feuerwerke den Himmel und sorgen für unvergessliche Momente. Doch zwischen den festlichen Feierlichkeiten genießt sie es ebenso, mit einer Portion Dumplings das Feuerwerk Spektakel zu beobachten und den Abend in aller Ruhe ausklingen zu lassen. Für sie gehören ausgelassene Feste und entspannte Augenblicke untrennbar zusammen.",
     image: "images/Firecracker Dorakutasan.png",
-    thumb: "images/Firecracker Dorakutasan.png"
+    thumb: "images/Firecracker Dora icon.png"
 },
 
 {
-    title: "Soul Fighter",
-    category: "LEAGUE COLLECTION",
-    description: "Kampforientierte Variante mit blau-goldenem Stil.",
-    image: "images/Soul Figther Dorakutasan.png",
-    thumb: "images/Soul Figther Dorakutasan.png"
+    name: "Soul Fighter Dorakutasan",
+    subtitle: "LEAGUE COLLECTION",
+    description: "Für Soul Fighter Dorakutasan ist jeder Kampf eine Bühne, auf der Stil genauso wichtig ist wie Stärke. Mit spektakulären Combos, blitzschnellen Reflexen und einem unerschütterlichen Kampfgeist stellt sie sich jedem Gegner entgegen und beweist, dass wahre Meisterschaft mehr als bloße Kraft erfordert. Doch endet das Turnier, zieht es sie direkt vor die Konsole, wo sie ihre Fähigkeiten in Fighting Games weiter perfektioniert. Ob in der Arena oder vor dem Bildschirm. Aufgeben kommt für sie niemals infrage.",
+    image: "images/Soul Fighter Dorakutasan.png",
+    thumb: "images/Soul Figther Dora.png"
 },
 
 {
-    title: "Spirit Blossom",
+    title: "Spirit Blossom Dorakutasan",
     category: "LEAGUE COLLECTION",
-    description: "Eleganter Fantasy-Skin mit Spirit Blossom Design.",
+    description: "Wenn während des Spirit Blossom Festivals die Grenze zwischen der Welt der Lebenden und dem Geisterreich schwindet, erscheint Spirit Blossom Dorakutasan als stille Begleiterin zwischen beiden Welten. Sie führt rastlose Seelen durch Erinnerungen, Abschiede und Neuanfänge. Zwischen den leuchtenden Spirit Blossoms und uralten Schreinen erinnert sie daran, dass selbst nach Verlust Hoffnung und Versöhnung ihren Platz finden können. Ihr Weg ist nicht der des Kampfes, sondern der des Gleichgewichts zwischen Vergangenheit und Zukunft."
     image: "images/Spirit Blossom Dorakutasan.png",
     thumb: "images/Spirit Blossom Dorakutasan.png"
 },
 
 {
-    title: "Killjoy",
-    category: "VALORANT",
-    description: "Inspirierte Version des Valorant Agents Killjoy.",
+    title: "Killjoy Dorakutasan",
+    category: "VALORANT COLLECTION",
+    description: "Als brillante Erfinderin löst Killjoy Dorakutasan jedes Problem mit Köpfchen statt roher Gewalt. Mit ihren selbst entwickelten Gadgets kontrolliert sie das Schlachtfeld und sorgt dafür, dass ihre Gegner niemals wissen, was sie als Nächstes erwartet. Doch sobald die Technik ausgeschaltet ist, kommt ihre zweite Leidenschaft zum Vorschein: Als bekennender Nerd verbringt sie ihre Freizeit mit Videospielen, neuen Technologien und allem, was ihren Erfindergeist weiter antreibt. Für sie ist jede Herausforderung ein Rätsel, das nur darauf wartet, gelöst zu werden."
     image: "images/Killjoy Dorakutasan.png",
     thumb: "images/Killjoy Dorakutasan.png"
 },
 
 {
-    title: "Junkrat",
-    category: "OVERWATCH",
-    description: "Chaotischer Look inspiriert von Junkrat.",
+    title: "Junkrat Dorakutasan",
+    category: "OVERWATCH COLLECTION",
+    description: "Junkrat Dorakutasan besitzt einen unstillbaren Drang nach Explosionen, Chaos und allem, was möglichst spektakulär in die Luft fliegt. Mit ihren verrückten Ideen und einem Talent dafür, aus scheinbar wertlosem Schrott die ungewöhnlichsten Konstruktionen zu bauen, überrascht sie Freunde und Gegner gleichermaßen. Vorausschauendes Denken gehört zwar nicht zu ihren größten Stärken, doch genau ihre unberechenbare Art macht sie so gefährlich. Für sie ist jedes Missgeschick nur ein weiterer Schritt auf dem Weg zur nächsten großen Explosion."
     image: "images/Junkrat Dorakutasan.png",
     thumb: "images/Junkrat Dorakutasan.png"
 },
 
 {
     title: "COD",
-    category: "CALL OF DUTY",
+    category: "CALL OF DUTY COLLECTION",
     description: "Militärischer Look mit taktischer Ausrüstung.",
     image: "images/Cod Dorakutasan.png",
     thumb: "images/Cod Dorakutasan.png"
