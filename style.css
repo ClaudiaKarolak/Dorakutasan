@@ -471,7 +471,7 @@ body{
 .vtuber-top{
 
     display:flex;
-
+    flex-direction: column;
     gap:60px;
 
     align-items:flex-start;
