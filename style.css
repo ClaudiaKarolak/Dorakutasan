@@ -707,59 +707,60 @@ TEXT
 ======================================*/
 
 .skin-info{
-
     position:absolute;
-
-    z-index:5;
-
     left:70px;
-
     top:50%;
-
     transform:translateY(-50%);
-
-    width:420px;
-
+    max-width:480px;
+    z-index:5;
 }
 
-.skin-category{
-
-    display:block;
-
-    color:#F5E09F;
-
-    font-size:.9rem;
-
-    letter-spacing:5px;
-
-    margin-bottom:15px;
-
-    text-transform:uppercase;
-
-}
-
+/* Name */
 #skinTitle{
-
-    color:#F5E09F;
-
-    font-family:'Cinzel Decorative',serif;
-
-    font-size:3.5rem;
-
-    margin-bottom:25px;
-
+    font-size:72px;
+    line-height:0.95;
+    font-weight:700;
+    color:#f3deb0;
+    text-transform:uppercase;
+    margin:10px 0 25px;
+    letter-spacing:2px;
 }
 
+/* Collection */
+.skin-category{
+    display:block;
+    font-size:17px;
+    letter-spacing:6px;
+    text-transform:uppercase;
+    color:#f2c15a;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+/* Beschreibung */
 #skinDescription{
-
-    color:white;
-
-    line-height:1.9;
-
-    font-size:1.05rem;
-
+    font-size:20px;
+    line-height:1.8;
+    color:#f1f1f1;
+    max-width:560px;
+    margin-bottom:40px;
 }
 
+/* Inspirations-Box */
+#skinInspiration{
+    display:inline-block;
+    padding:12px 22px;
+    border:1px solid rgba(242,193,90,.45);
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(8px);
+    border-radius:8px;
+
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#f2c15a;
+    font-weight:600;
+}
 
 /*======================================
 ARROWS
