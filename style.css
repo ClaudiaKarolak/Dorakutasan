@@ -527,25 +527,15 @@ body{
     font-family:"Cinzel Decorative", serif;
 }
 
-/* ==================================================
+/* ==========================================
    SHOWCASE
-================================================== */
+========================================== */
 
 .vtuber-showcase{
 
     width:100%;
 
     margin-top:70px;
-
-    padding:50px;
-
-    border:2px solid #6A1B9A;
-
-    border-radius:28px;
-
-    background:#100d16;
-
-    overflow:hidden;
 
 }
 
@@ -559,9 +549,7 @@ body{
 
     font-size:2.6rem;
 
-    margin-bottom:45px;
-
-    letter-spacing:2px;
+    margin-bottom:40px;
 
 }
 
@@ -575,11 +563,17 @@ body{
 
     width:100%;
 
-    border-radius:20px;
+    max-width:1200px;
+
+    margin:auto;
 
     overflow:hidden;
 
-    background:#18131f;
+    border-radius:22px;
+
+    border:2px solid #6A1B9A;
+
+    background:#120d18;
 
 }
 
@@ -587,58 +581,173 @@ body{
 
 .concept-image{
 
-    width:100%;
-
     display:block;
 
-    transition:.6s ease;
+    width:100%;
 
-    transform-origin:center;
-
-    cursor:grab;
+    transition:.5s ease;
 
 }
 
 
-/* Buttons */
 
-.concept-btn{
+/* Labels */
+
+.label{
 
     position:absolute;
 
-    padding:10px 18px;
-
-    background:rgba(10,10,10,.72);
+    background:rgba(15,15,15,.82);
 
     border:1px solid #E5DE9F;
 
-    border-radius:8px;
-
     color:#E5DE9F;
 
-    font-family:"Cinzel Decorative",serif;
+    padding:8px 16px;
+
+    border-radius:8px;
 
     font-size:.8rem;
 
     letter-spacing:2px;
 
-    cursor:pointer;
+    font-family:"Cinzel Decorative",serif;
 
-    transition:.25s;
-
-    backdrop-filter:blur(6px);
+    pointer-events:none;
 
 }
 
 
 
-.concept-btn:hover{
+/* Positionen */
 
-    background:#E5DE9F;
+.front{
 
-    color:#111;
+    top:6%;
 
-    transform:scale(1.08);
+    left:15%;
+
+}
+
+.left{
+
+    top:8%;
+
+    left:43%;
+
+}
+
+.face{
+
+    top:8%;
+
+    right:7%;
+
+}
+
+.back{
+
+    bottom:8%;
+
+    left:15%;
+
+}
+
+.right{
+
+    bottom:8%;
+
+    left:43%;
+
+}
+
+.backface{
+
+    bottom:8%;
+
+    right:7%;
+
+}
+
+
+
+/* Navigation */
+
+.showcase-nav{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-top:30px;
+
+}
+
+
+
+.show-btn{
+
+    background:transparent;
+
+    border:2px solid #6A1B9A;
+
+    color:#E5DE9F;
+
+    padding:12px 24px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-family:"Cinzel Decorative",serif;
+
+    letter-spacing:1px;
+
+}
+
+
+
+.show-btn:hover{
+
+    background:#6A1B9A;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+.show-btn.active{
+
+    background:#6A1B9A;
+
+}
+
+
+
+/* Handy */
+
+@media(max-width:900px){
+
+    .label{
+
+        font-size:.55rem;
+
+        padding:6px 10px;
+
+    }
+
+    .show-btn{
+
+        width:140px;
+
+    }
 
 }
 
