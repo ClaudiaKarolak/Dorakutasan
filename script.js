@@ -99,100 +99,108 @@ const skins = [
     name: "Dorakutasan",
     subtitle: "LEAGUE COLLECTION",
     description: "Inspiriert von Setts unaufhaltsamer Kampfeslust verkörpert Dorakutasan pure Entschlossenheit und den unerschütterlichen Glauben daran, jede Herausforderung überwinden zu können. Als Kämpferin schreckt sie vor keinem Gegner zurück und begegnet jedem Hindernis mit Mut, Disziplin und einem eisernen Willen. Jeder Kampf ist für sie eine Gelegenheit, stärker zu werden und über sich hinauszuwachsen. Dieses Design ist die ursprüngliche Version von Dorakutasan und bildet die Grundlage für alle späteren Varianten, die unterschiedliche Seiten ihrer Persönlichkeit und ihrer Leidenschaften widerspiegeln.",
-    inspiration: "✦ INSPIRED BY LEAGUE OF LEGENDS",
+    inspiration: "✦ DESIGN INSPIRED BY LEAGUE OF LEGENDS",
     image: "images/Dorakutasan Normal.png",
     thumb: "images/Dorakutasan icon.png"
 },
 
 {
-    name: "Splash Showdown Dorakutasan",
+    name: "Splash Showdown",
     subtitle: "LEAGUE COLLECTION",
-    description: "Wenn die Sonne am höchsten steht, tauscht Splash Showdown Dorakutasan das Schlachtfeld gegen den Strand. Mit einem kühlen Drink in der Hand genießt sie die Ruhe im Schatten, immer bereit, den perfekten Moment auszukosten. Doch der entspannte Eindruck täuscht, beginnt die Wasserschlacht, stürzt sie sich ohne zu zögern ins Getümmel und sorgt mit ihrer energiegeladenen Art dafür, dass niemand trocken bleibt. Zwischen Gelassenheit und Chaos fühlt sich Splash Showdown Dorakutasan am wohlsten.",
-    inspiration: "✦ INSPIRED BY LEAGUE OF LEGENDS",
+    description: "Wenn die Sonne am höchsten steht, tauscht Splash Showdown Dorakutasan das Schlachtfeld gegen den Strand. Mit einem kühlen Drink in der Hand genießt sie die Ruhe im Schatten, immer bereit, den perfekten Moment auszukosten. Doch der entspannte Eindruck täuscht: Beginnt die Wasserschlacht, stürzt sie sich ohne zu zögern ins Getümmel und sorgt mit ihrer energiegeladenen Art dafür, dass niemand trocken bleibt.",
+    inspiration: "✦ DESIGN INSPIRED BY LEAGUE OF LEGENDS",
     image: "images/Pool Party Dorakutasan.png",
     thumb: "images/Pool Party icon.png"
 },
 
 {
-    name: "Ryū no Mai Dorakutasan",
+    name: "Ryū no Mai",
     subtitle: "LEAGUE COLLECTION",
-    description: "Mit der Energie der traditionellen Drachentänze bringt Ryū no Mai Dorakutasan jede Feier zum Leuchten. Wo sie auftaucht, erfüllen Funken, Farben und Feuerwerke den Himmel und sorgen für unvergessliche Momente. Doch zwischen den festlichen Feierlichkeiten genießt sie es ebenso, mit einer Portion Gyoza das Feuerwerk Spektakel zu beobachten und den Abend in aller Ruhe ausklingen zu lassen. Für sie gehören ausgelassene Feste und entspannte Augenblicke untrennbar zusammen.",
-    inspiration: "✦ INSPIRED BY LEAGUE OF LEGENDS",
+    description: "Mit der Energie traditioneller Drachentänze bringt Ryū no Mai Dorakutasan jede Feier zum Leuchten. Wo sie auftaucht, erfüllen Funken, Feuerwerke und leuchtende Farben den Himmel. Zwischen den Feierlichkeiten genießt sie es, eine Portion Gyoza zu essen und das Feuerwerk in aller Ruhe zu beobachten. Für sie gehören ausgelassene Feste und entspannte Momente untrennbar zusammen.",
+    inspiration: "✦ DESIGN INSPIRED BY LEAGUE OF LEGENDS",
     image: "images/Firecracker Dorakutasan.png",
     thumb: "images/Firecracker Dora icon.png"
 },
 
 {
-    name: "Soul Fighter Dorakutasan",
+    name: "Sakura Spirit",
     subtitle: "LEAGUE COLLECTION",
-    description: "Für Soul Fighter Dorakutasan ist jeder Kampf eine Bühne, auf der Stil genauso wichtig ist wie Stärke. Mit spektakulären Combos, blitzschnellen Reflexen und einem unerschütterlichen Kampfgeist stellt sie sich jedem Gegner entgegen und beweist, dass wahre Meisterschaft mehr als bloße Kraft erfordert. Doch endet das Turnier, zieht es sie direkt vor die Konsole, wo sie ihre Fähigkeiten in Fighting Games weiter perfektioniert. Ob in der Arena oder vor dem Bildschirm. Aufgeben kommt für sie niemals infrage.",
-    image: "images/Soul Fighter Dorakutasan.png",
-    thumb: "images/Soul Figther Dora.png"
-},
-
-{
-    title: "Sakura Spirit Dorakutasan",
-    category: "LEAGUE COLLECTION",
-    description: "Wenn während des Sakura Spirits Festivals die Grenze zwischen der Welt der Lebenden und dem Geisterreich schwindet, erscheint Sakura Spirit Dorakutasan als stille Begleiterin zwischen beiden Welten. Sie führt rastlose Seelen durch Erinnerungen, Abschiede und Neuanfänge. Zwischen den leuchtenden Sakura Spirit und uralten Schreinen erinnert sie daran, dass selbst nach Verlust Hoffnung und Versöhnung ihren Platz finden können. Ihr Weg ist nicht der des Kampfes, sondern der des Gleichgewichts zwischen Vergangenheit und Zukunft."
-    inspiration: "✦ INSPIRED BY LEAGUE OF LEGENDS",
+    description: "Während des Sakura Spirits Festivals, wenn die Grenze zwischen der Welt der Lebenden und dem Geisterreich verschwindet, erscheint Sakura Spirit Dorakutasan als stille Begleiterin zwischen beiden Welten. Zwischen blühenden Kirschblüten und uralten Schreinen führt sie rastlose Seelen auf ihrem Weg zu Frieden und Versöhnung. Sie erinnert daran, dass selbst nach Verlust Hoffnung wachsen kann und jede Seele ihren Platz finden wird.",
+    inspiration: "✦ DESIGN INSPIRED BY LEAGUE OF LEGENDS",
     image: "images/Spirit Blossom Dorakutasan.png",
-    thumb: "images/Spirit Blossom Dorakutasan.png"
+    thumb: "images/Spirit Blossom Dora icon.png"
 },
 
 {
-    title: "Killjoy Dorakutasan",
-    category: "VALORANT COLLECTION",
-    description: "Als brillante Erfinderin löst Killjoy Dorakutasan jedes Problem mit Köpfchen statt roher Gewalt. Mit ihren selbst entwickelten Gadgets kontrolliert sie das Schlachtfeld und sorgt dafür, dass ihre Gegner niemals wissen, was sie als Nächstes erwartet. Doch sobald die Technik ausgeschaltet ist, kommt ihre zweite Leidenschaft zum Vorschein: Als bekennender Nerd verbringt sie ihre Freizeit mit Videospielen, neuen Technologien und allem, was ihren Erfindergeist weiter antreibt. Für sie ist jede Herausforderung ein Rätsel, das nur darauf wartet, gelöst zu werden."
+    name: "Soul Fighter",
+    subtitle: "LEAGUE COLLECTION",
+    description: "Für Soul Fighter Dorakutasan ist jeder Kampf eine Bühne. Mit blitzschnellen Reflexen, spektakulären Combos und ihrem unverwechselbaren Kampfstil stellt sie sich jedem Gegner entgegen. Doch endet das Turnier, zieht es sie direkt vor die Konsole, wo sie ihre Fähigkeiten in Fighting Games weiter perfektioniert. Ob in der Arena oder zuhause – Aufgeben kommt für sie niemals infrage.",
+    inspiration: "✦ DESIGN INSPIRED BY LEAGUE OF LEGENDS",
+    image: "images/Soul Fighter Dorakutasan.png",
+    thumb: "images/Soul Fighter Dora.png"
+},
+
+{
+    name: "Killjoy",
+    subtitle: "VALORANT COLLECTION",
+    description: "Als brillante Erfinderin löst Killjoy Dorakutasan jedes Problem mit Köpfchen statt roher Gewalt. Mit ihren selbst entwickelten Gadgets kontrolliert sie jede Situation und ist ihren Gegnern stets einen Schritt voraus. Außerhalb des Schlachtfeldes verbringt sie ihre Zeit als leidenschaftlicher Nerd mit Videospielen, Technik und neuen Projekten. Für sie ist jede Herausforderung ein Rätsel, das nur darauf wartet gelöst zu werden.",
+    inspiration: "✦ DESIGN INSPIRED BY VALORANT",
     image: "images/Killjoy Dorakutasan.png",
-    thumb: "images/Killjoy Dorakutasan.png"
+    thumb: "images/Killjoy Dora icon.png"
 },
 
 {
-    title: "Junkrat Dorakutasan",
-    category: "OVERWATCH COLLECTION",
-    description: "Junkrat Dorakutasan besitzt einen unstillbaren Drang nach Explosionen, Chaos und allem, was möglichst spektakulär in die Luft fliegt. Mit ihren verrückten Ideen und einem Talent dafür, aus scheinbar wertlosem Schrott die ungewöhnlichsten Konstruktionen zu bauen, überrascht sie Freunde und Gegner gleichermaßen. Vorausschauendes Denken gehört zwar nicht zu ihren größten Stärken, doch genau ihre unberechenbare Art macht sie so gefährlich. Für sie ist jedes Missgeschick nur ein weiterer Schritt auf dem Weg zur nächsten großen Explosion."
+    name: "Junkrat",
+    subtitle: "OVERWATCH COLLECTION",
+    description: "Junkrat Dorakutasan lebt für Chaos, Explosionen und jede Menge Schrott. Mit verrückten Ideen baut sie aus allem, was herumliegt, die ungewöhnlichsten Konstruktionen. Vorausschauendes Denken gehört zwar nicht zu ihren größten Stärken, doch genau ihre unberechenbare Art macht sie so gefährlich. Wo andere ein Problem sehen, sieht sie bereits die nächste große Explosion.",
+    inspiration: "✦ DESIGN INSPIRED BY OVERWATCH",
     image: "images/Junkrat Dorakutasan.png",
-    thumb: "images/Junkrat Dorakutasan.png"
+    thumb: "images/Junkrat Dora icon.png"
 },
 
 {
-    title: "COD",
-    category: "CALL OF DUTY COLLECTION",
-    description: "Militärischer Look mit taktischer Ausrüstung.",
-    image: "images/Cod Dorakutasan.png",
-    thumb: "images/Cod Dorakutasan.png"
-},
-
-{
-    title: "D&D Succubus",
-    category: "DUNGEONS & DRAGONS",
-    description: "Fantasy-Skin als Succubus interpretiert.",
-    image: "images/D&D Dorakutasan.png",
-    thumb: "images/D&D Dorakutasan.png"
-},
-
-{
-    title: "Purple",
-    category: "ORIGINAL",
-    description: "Neon-Lila Variante meines Charakters.",
+    name: "Purple Neon",
+    subtitle: "VALORANT COLLECTION",
+    description: "Purple Neon Dorakutasan bewegt sich mit unglaublicher Geschwindigkeit durch jede Situation. Hinter ihrem verspielten Auftreten verbirgt sich jedoch ein unberechenbarer Kampfstil. Mit ihrer Liebe zu Hasen, Neonfarben und einem Hauch Wahnsinn hinterlässt sie überall ihre ganz eigene Spur.",
+    inspiration: "✦ DESIGN INSPIRED BY VALORANT",
     image: "images/Purple Neon Dorakutasan.png",
-    thumb: "images/Purple Neon Dorakutasan.png"
+    thumb: "images/Purple Neon Dora icon.png"
 },
 
 {
-    title: "Melatonin",
-    category: "ORIGINAL",
-    description: "Traumhafte Version mit sanften Farben.",
+    name: "Ghost Protocol",
+    subtitle: "CALL OF DUTY COLLECTION",
+    description: "Ghost Protocol Dorakutasan agiert lautlos und präzise. Jeder Einsatz wird sorgfältig geplant und jeder Schritt sitzt perfekt. Ausgerüstet mit modernster taktischer Ausrüstung verschwindet sie ebenso schnell, wie sie auftaucht. Für ihre Gegner bleibt oft nur die Frage, ob sie überhaupt jemals dort gewesen ist.",
+    inspiration: "✦ DESIGN INSPIRED BY CALL OF DUTY",
+    image: "images/Cod Dorakutasan.png",
+    thumb: "images/Cod Dora icon.png"
+},
+
+{
+    name: "Druella",
+    subtitle: "DUNGEONS & DRAGONS COLLECTION",
+    description: "Druella basiert auf einem meiner eigenen Dungeons & Dragons Charaktere. Als mächtige Succubus verbindet sie Eleganz mit dunkler Magie und nutzt Charme ebenso geschickt wie ihre übernatürlichen Fähigkeiten. Dieses Design entstand als Hommage an eine meiner liebsten Pen-&-Paper Figuren.",
+    inspiration: "✦ DESIGN INSPIRED BY DUNGEONS & DRAGONS",
+    image: "images/D&D Dorakutasan.png",
+    thumb: "images/D&D Dorakutasan icon.png"
+},
+
+{
+    name: "Valentine Kiss",
+    subtitle: "ORIGINAL COLLECTION",
+    description: "Valentine Kiss Dorakutasan liebt alles, was romantisch und verspielt ist. Mit sanften Farben, kleinen Gesten und einer Vorliebe für liebevolle Überraschungen verteilt sie mehr Herzklopfen als jedes Geschenk. Hinter ihrem niedlichen Auftreten verbirgt sich eine charmante Persönlichkeit, die jeden Tag ein kleines bisschen schöner machen möchte.",
+    inspiration: "✦ ORIGINAL DESIGN",
     image: "images/Melatonin Dorakutasan.png",
-    thumb: "images/Melatonin Dorakutasan.png"
+    thumb: "images/Valentine Dora icon.png"
 },
 
 {
-    title: "Maid",
-    category: "ORIGINAL",
-    description: "Klassisches Maid Outfit.",
+    name: "Kawaii Maid",
+    subtitle: "ORIGINAL COLLECTION",
+    description: "Kawaii Maid Dorakutasan verbindet klassischen Maid-Stil mit einer verspielten, niedlichen Ausstrahlung. Zwischen Schleifen, Rüschen und einer Prise Chaos sorgt sie immer für gute Laune und ein herzliches Lächeln. Für sie gehören Höflichkeit, Charme und ein wenig Unsinn einfach zusammen.",
+    inspiration: "✦ ORIGINAL DESIGN",
     image: "images/Maid Dorakutasan.png",
-    thumb: "images/Maid Dorakutasan.png"
+    thumb: "images/Maid Dora icon.png"
 }
 
 ];
@@ -227,22 +235,19 @@ function loadSkin(index){
 
         artwork.src = skins[index].image;
 
-        title.textContent = skins[index].title;
-
-        category.textContent = skins[index].category;
-
+        title.textContent = skins[index].name;
+        category.textContent = skins[index].subtitle;
         description.textContent = skins[index].description;
 
-        document.getElementById("skinInspiration").textContent = skins[index].inspiration;
+        document.getElementById("skinInspiration").textContent =
+            skins[index].inspiration;
 
         artwork.classList.remove("fade");
 
     }, 200);
 
     document.querySelectorAll(".skin-button").forEach((button, i) => {
-
         button.classList.toggle("active", i === index);
-
     });
 
 }
@@ -251,29 +256,24 @@ function loadSkin(index){
 BUTTONS ERSTELLEN
 ======================================*/
 
-skins.forEach((skin,index)=>{
+skins.forEach((skin, index) => {
 
     const button = document.createElement("button");
 
     button.className = "skin-button";
 
-    if(index===0){
-
+    if (index === 0) {
         button.classList.add("active");
-
     }
 
-    button.innerHTML=`
-
-        <img src="${skin.thumb}" alt="${skin.title}">
-
-        <span>${skin.title}</span>
-
+    button.innerHTML = `
+        <img src="${skin.thumb}" alt="${skin.name}">
+        <span>${skin.name}</span>
     `;
 
-    button.addEventListener("click",()=>{
+    button.addEventListener("click", () => {
 
-        currentSkin=index;
+        currentSkin = index;
 
         loadSkin(currentSkin);
 
