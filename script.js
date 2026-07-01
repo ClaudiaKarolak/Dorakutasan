@@ -104,47 +104,46 @@ function zoomConcept(scale, x, y){
 
 }
 
-document.querySelector(".front").addEventListener("click",()=>{
+const views = {
 
-    zoomConcept(2.2,14,28);
+    full: [1, 50, 50],
 
-});
+    front: [2.2, 14, 28],
 
-document.querySelector(".back").addEventListener("click",()=>{
+    back: [2.2, 14, 77],
 
-    zoomConcept(2.2,14,77);
+    left: [2.2, 46, 30],
 
-});
+    right: [2.2, 46, 77],
 
-document.querySelector(".left").addEventListener("click",()=>{
+    face: [3.3, 82, 22],
 
-    zoomConcept(2.2,46,30);
+    backface: [3.3, 82, 76]
 
-});
+};
 
-document.querySelector(".right").addEventListener("click",()=>{
 
-    zoomConcept(2.2,46,77);
+document.querySelectorAll(".show-btn").forEach(button=>{
 
-});
+    button.addEventListener("click",()=>{
 
-document.querySelector(".face").addEventListener("click",()=>{
+        document.querySelectorAll(".show-btn").forEach(btn=>{
 
-    zoomConcept(3.3,82,22);
+            btn.classList.remove("active");
 
-});
+        });
 
-document.querySelector(".backface").addEventListener("click",()=>{
+        button.classList.add("active");
 
-    zoomConcept(3.3,82,76);
+        const data = views[button.dataset.view];
 
-});
+        zoomConcept(data[0],data[1],data[2]);
 
-document.querySelector(".reset").addEventListener("click",()=>{
-
-    zoomConcept(1,50,50);
+    });
 
 });
+
+zoomConcept(1,50,50);
 
 
 /*======================================
