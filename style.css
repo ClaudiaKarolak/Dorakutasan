@@ -593,8 +593,11 @@ body{
 
     transition:.6s ease;
 
-}
+    transform-origin:center;
 
+    cursor:grab;
+
+}
 
 
 /* Buttons */
