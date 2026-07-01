@@ -223,7 +223,7 @@ function loadSkin(index){
 
     artwork.classList.add("fade");
 
-    setTimeout(()=>{
+    setTimeout(() => {
 
         artwork.src = skins[index].image;
 
@@ -233,18 +233,19 @@ function loadSkin(index){
 
         description.textContent = skins[index].description;
 
+        document.getElementById("skinInspiration").textContent = skins[index].inspiration;
+
         artwork.classList.remove("fade");
 
-    },200);
+    }, 200);
 
-    document.querySelectorAll(".skin-button").forEach((button,i)=>{
+    document.querySelectorAll(".skin-button").forEach((button, i) => {
 
-        button.classList.toggle("active",i===index);
+        button.classList.toggle("active", i === index);
 
     });
 
 }
-
 
 /*======================================
 BUTTONS ERSTELLEN
