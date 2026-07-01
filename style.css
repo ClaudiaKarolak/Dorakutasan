@@ -531,97 +531,208 @@ body{
    VTUBER SHOWCASE
 ========================================== */
 
-const conceptImage = document.getElementById("conceptImage");
-const showcaseButtons = document.querySelectorAll(".show-btn");
+.vtuber-showcase{
+    width:100%;
+    margin-top:70px;
+}
 
-/* Zoom-Positionen */
-const showcaseViews = {
+.showcase-title{
 
-    full: {
-        scale: 1,
-        origin: "50% 50%"
-    },
+    text-align:center;
+    color:#E5DE9F;
+    font-family:"Cinzel Decorative", serif;
+    font-size:2.6rem;
+    margin-bottom:40px;
 
-    front: {
-        scale: 1.45,
-        origin: "15% 25%"
-    },
+}
 
-    left: {
-        scale: 1.65,
-        origin: "48% 23%"
-    },
 
-    face: {
-        scale: 2.25,
-        origin: "83% 23%"
-    },
+/* Bild */
 
-    right: {
-        scale: 1.65,
-        origin: "48% 76%"
-    },
+.concept-container{
 
-    back: {
-        scale: 1.45,
-        origin: "15% 76%"
-    },
+    position:relative;
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    overflow:hidden;
 
-    backface: {
-        scale: 2.25,
-        origin: "83% 76%"
+    border:2px solid #6A1B9A;
+    border-radius:22px;
+    background:#120d18;
+
+}
+
+.concept-image{
+
+    display:block;
+    width:100%;
+    transition:.55s ease;
+
+}
+
+
+/* Labels */
+
+.label{
+
+    position:absolute;
+
+    background:rgba(15,15,15,.82);
+
+    border:1px solid #E5DE9F;
+
+    color:#E5DE9F;
+
+    padding:8px 18px;
+
+    border-radius:10px;
+
+    font-family:"Cinzel Decorative",serif;
+
+    font-size:.8rem;
+
+    letter-spacing:1px;
+
+    pointer-events:none;
+
+}
+
+
+/* Positionen */
+
+.front{
+
+    top:6%;
+    left:15%;
+
+}
+
+.left{
+
+    top:8%;
+    left:46%;
+
+}
+
+.face{
+
+    top:8%;
+    right:7%;
+
+}
+
+.back{
+
+    bottom:8%;
+    left:15%;
+
+}
+
+.right{
+
+    bottom:8%;
+    left:46%;
+
+}
+
+.backface{
+
+    bottom:8%;
+    right:7%;
+
+}
+
+
+/* Navigation */
+
+.showcase-nav{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+
+.show-btn{
+
+    background:transparent;
+
+    border:2px solid #6A1B9A;
+
+    color:#E5DE9F;
+
+    padding:12px 26px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-family:"Cinzel Decorative", serif;
+
+    letter-spacing:1px;
+
+}
+
+
+.show-btn:hover{
+
+    background:#6A1B9A;
+
+    transform:translateY(-2px);
+
+}
+
+
+.show-btn.active{
+
+    background:#6A1B9A;
+
+}
+
+
+/* Handy */
+
+@media(max-width:900px){
+
+    .showcase-title{
+
+        font-size:2rem;
+
     }
 
-};
+    .label{
 
+        font-size:.6rem;
 
-/* Standardansicht */
+        padding:5px 10px;
 
-conceptImage.style.transformOrigin = showcaseViews.full.origin;
-conceptImage.style.transform = `scale(${showcaseViews.full.scale})`;
-
-
-/* Buttons */
-
-showcaseButtons.forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        showcaseButtons.forEach(btn =>
-            btn.classList.remove("active")
-        );
-
-        button.classList.add("active");
-
-        const view = showcaseViews[button.dataset.view];
-
-        conceptImage.style.transformOrigin = view.origin;
-        conceptImage.style.transform = `scale(${view.scale})`;
-
-    });
-
-});
-
-
-/* Optional: Doppelklick = Full View */
-
-conceptImage.addEventListener("dblclick", () => {
-
-    showcaseButtons.forEach(btn =>
-        btn.classList.remove("active")
-    );
-
-    const fullButton = document.querySelector('[data-view="full"]');
-
-    if(fullButton){
-        fullButton.classList.add("active");
     }
 
-    conceptImage.style.transformOrigin = showcaseViews.full.origin;
-    conceptImage.style.transform = `scale(${showcaseViews.full.scale})`;
+    .showcase-nav{
 
-});
+        gap:10px;
 
+    }
+
+    .show-btn{
+
+        font-size:.75rem;
+
+        padding:10px 16px;
+
+    }
+
+}
     
 /* ======================
    CHARACTER ART
