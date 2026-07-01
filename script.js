@@ -98,23 +98,26 @@ const skins = [
 {
     name: "Dorakutasan",
     subtitle: "LEAGUE COLLECTION",
-description: "Inspiriert von Setts unaufhaltsamer Kampfeslust verkörpert Dorakutasan pure Entschlossenheit und den unerschütterlichen Glauben daran, jede Herausforderung überwinden zu können. Als Kämpferin schreckt sie vor keinem Gegner zurück und begegnet jedem Hindernis mit Mut, Disziplin und einem eisernen Willen. Jeder Kampf ist für sie eine Gelegenheit, stärker zu werden und über sich hinauszuwachsen. Dieses Design ist die ursprüngliche Version von Dorakutasan und bildet die Grundlage für alle späteren Varianten, die unterschiedliche Seiten ihrer Persönlichkeit und ihrer Leidenschaften widerspiegeln."
+    description: "Inspiriert von Setts unaufhaltsamer Kampfeslust verkörpert Dorakutasan pure Entschlossenheit und den unerschütterlichen Glauben daran, jede Herausforderung überwinden zu können. Als Kämpferin schreckt sie vor keinem Gegner zurück und begegnet jedem Hindernis mit Mut, Disziplin und einem eisernen Willen. Jeder Kampf ist für sie eine Gelegenheit, stärker zu werden und über sich hinauszuwachsen. Dieses Design ist die ursprüngliche Version von Dorakutasan und bildet die Grundlage für alle späteren Varianten, die unterschiedliche Seiten ihrer Persönlichkeit und ihrer Leidenschaften widerspiegeln.",
+    inspiration: "✦ INSPIRED BY LEAGUE OF LEGENDS",
     image: "images/Dorakutasan Normal.png",
     thumb: "images/Dorakutasan icon.png"
 },
 
 {
-    name: "Pool Party Dorakutasan",
+    name: "Splash Showdown Dorakutasan",
     subtitle: "LEAGUE COLLECTION",
-    description: "Wenn die Sonne am höchsten steht, tauscht Pool Party Dorakutasan das Schlachtfeld gegen den Strand. Mit einem kühlen Drink in der Hand genießt sie die Ruhe im Schatten, immer bereit, den perfekten Moment auszukosten. Doch der entspannte Eindruck täuscht, beginnt die Wasserschlacht, stürzt sie sich ohne zu zögern ins Getümmel und sorgt mit ihrer energiegeladenen Art dafür, dass niemand trocken bleibt. Zwischen Gelassenheit und Chaos fühlt sich Pool Party Dorakutasan am wohlsten.",
+    description: "Wenn die Sonne am höchsten steht, tauscht Splash Showdown Dorakutasan das Schlachtfeld gegen den Strand. Mit einem kühlen Drink in der Hand genießt sie die Ruhe im Schatten, immer bereit, den perfekten Moment auszukosten. Doch der entspannte Eindruck täuscht, beginnt die Wasserschlacht, stürzt sie sich ohne zu zögern ins Getümmel und sorgt mit ihrer energiegeladenen Art dafür, dass niemand trocken bleibt. Zwischen Gelassenheit und Chaos fühlt sich Splash Showdown Dorakutasan am wohlsten.",
+    inspiration: "✦ INSPIRED BY LEAGUE OF LEGENDS",
     image: "images/Pool Party Dorakutasan.png",
     thumb: "images/Pool Party icon.png"
 },
 
 {
-    name: "Firecracker Dorakutasan",
+    name: "Ryū no Mai Dorakutasan",
     subtitle: "LEAGUE COLLECTION",
-    description: "Mit der Energie der traditionellen Drachentänze bringt Firecracker Dorakutasan jede Feier zum Leuchten. Wo sie auftaucht, erfüllen Funken, Farben und Feuerwerke den Himmel und sorgen für unvergessliche Momente. Doch zwischen den festlichen Feierlichkeiten genießt sie es ebenso, mit einer Portion Dumplings das Feuerwerk Spektakel zu beobachten und den Abend in aller Ruhe ausklingen zu lassen. Für sie gehören ausgelassene Feste und entspannte Augenblicke untrennbar zusammen.",
+    description: "Mit der Energie der traditionellen Drachentänze bringt Ryū no Mai Dorakutasan jede Feier zum Leuchten. Wo sie auftaucht, erfüllen Funken, Farben und Feuerwerke den Himmel und sorgen für unvergessliche Momente. Doch zwischen den festlichen Feierlichkeiten genießt sie es ebenso, mit einer Portion Gyoza das Feuerwerk Spektakel zu beobachten und den Abend in aller Ruhe ausklingen zu lassen. Für sie gehören ausgelassene Feste und entspannte Augenblicke untrennbar zusammen.",
+    inspiration: "✦ INSPIRED BY LEAGUE OF LEGENDS",
     image: "images/Firecracker Dorakutasan.png",
     thumb: "images/Firecracker Dora icon.png"
 },
@@ -128,9 +131,10 @@ description: "Inspiriert von Setts unaufhaltsamer Kampfeslust verkörpert Doraku
 },
 
 {
-    title: "Spirit Blossom Dorakutasan",
+    title: "Sakura Spirit Dorakutasan",
     category: "LEAGUE COLLECTION",
-    description: "Wenn während des Spirit Blossom Festivals die Grenze zwischen der Welt der Lebenden und dem Geisterreich schwindet, erscheint Spirit Blossom Dorakutasan als stille Begleiterin zwischen beiden Welten. Sie führt rastlose Seelen durch Erinnerungen, Abschiede und Neuanfänge. Zwischen den leuchtenden Spirit Blossoms und uralten Schreinen erinnert sie daran, dass selbst nach Verlust Hoffnung und Versöhnung ihren Platz finden können. Ihr Weg ist nicht der des Kampfes, sondern der des Gleichgewichts zwischen Vergangenheit und Zukunft."
+    description: "Wenn während des Sakura Spirits Festivals die Grenze zwischen der Welt der Lebenden und dem Geisterreich schwindet, erscheint Sakura Spirit Dorakutasan als stille Begleiterin zwischen beiden Welten. Sie führt rastlose Seelen durch Erinnerungen, Abschiede und Neuanfänge. Zwischen den leuchtenden Sakura Spirit und uralten Schreinen erinnert sie daran, dass selbst nach Verlust Hoffnung und Versöhnung ihren Platz finden können. Ihr Weg ist nicht der des Kampfes, sondern der des Gleichgewichts zwischen Vergangenheit und Zukunft."
+    inspiration: "✦ INSPIRED BY LEAGUE OF LEGENDS",
     image: "images/Spirit Blossom Dorakutasan.png",
     thumb: "images/Spirit Blossom Dorakutasan.png"
 },
