@@ -1488,72 +1488,64 @@ KLEINE HANDYS
     line-height:1.8;
 }
 
-.linktree-card{
+.contact-social{
+
+    flex:1;
 
     display:flex;
+
     flex-direction:column;
-    justify-content:center;
-    align-items:center;
 
-    width:420px;
-    height:320px;
-
-    border:2px solid #6A1B9A;
-    border-radius:25px;
-
-    text-decoration:none;
-
-    background:#120d18;
-
-    transition:.3s;
-}
-
-.linktree-card:hover{
-
-    transform:translateY(-8px);
-
-    box-shadow:0 0 25px rgba(106,27,154,.45);
+    align-items:flex-start;
 
 }
 
-.linktree-icon{
-
-    font-size:4rem;
-
-    margin-bottom:20px;
-
-}
-
-.linktree-card h4{
+.contact-social h3{
 
     color:#E5DE9F;
 
     font-family:"Cinzel Decorative",serif;
 
-    font-size:2rem;
-
     margin-bottom:20px;
 
 }
 
-.linktree-card p{
-
-    width:80%;
-
-    text-align:center;
+.social-text{
 
     color:#d6d6d6;
 
     line-height:1.8;
 
+    max-width:320px;
+
     margin-bottom:30px;
 
 }
 
-.linktree-card span{
+.social-link{
+
+    display:inline-block;
+
+    padding:14px 28px;
+
+    border:2px solid #6A1B9A;
+
+    border-radius:15px;
 
     color:#E5DE9F;
 
-    font-weight:bold;
+    text-decoration:none;
+
+    font-family:"Cinzel Decorative",serif;
+
+    transition:.3s;
+
+}
+
+.social-link:hover{
+
+    background:#6A1B9A;
+
+    transform:translateY(-3px);
 
 }
