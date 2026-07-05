@@ -1488,60 +1488,72 @@ KLEINE HANDYS
     line-height:1.8;
 }
 
-/* SOCIALS */
-
-.social-section{
-
-    width:500px;
-}
-
-.social-section h3{
-
-    text-align:center;
-
-    color:#E5DE9F;
-
-    font-family:"Cinzel Decorative", serif;
-
-    margin-bottom:30px;
-}
-
-.social-grid{
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(2, 1fr);
-
-    gap:25px;
-}
-
-.social-card{
-
-    height:180px;
-
-    border:2px solid #6A1B9A;
-
-    border-radius:25px;
+.linktree-card{
 
     display:flex;
-
+    flex-direction:column;
     justify-content:center;
-
     align-items:center;
+
+    width:420px;
+    height:320px;
+
+    border:2px solid #6A1B9A;
+    border-radius:25px;
 
     text-decoration:none;
 
-    color:#E5DE9F;
+    background:#120d18;
 
-    font-family:"Cinzel Decorative", serif;
-
-    transition:0.3s;
+    transition:.3s;
 }
 
-.social-card:hover{
+.linktree-card:hover{
 
-    border-color:#E5DE9F;
+    transform:translateY(-8px);
 
-    transform:translateY(-5px);
+    box-shadow:0 0 25px rgba(106,27,154,.45);
+
+}
+
+.linktree-icon{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+}
+
+.linktree-card h4{
+
+    color:#E5DE9F;
+
+    font-family:"Cinzel Decorative",serif;
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+.linktree-card p{
+
+    width:80%;
+
+    text-align:center;
+
+    color:#d6d6d6;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.linktree-card span{
+
+    color:#E5DE9F;
+
+    font-weight:bold;
+
 }
