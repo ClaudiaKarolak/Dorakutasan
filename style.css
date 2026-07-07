@@ -260,8 +260,14 @@ body{
 ====================== */
 
 #portfolio{
+
     padding:120px 10%;
+
 }
+
+/* ======================
+   ÜBERSCHRIFT
+====================== */
 
 #portfolio h2{
 
@@ -274,7 +280,12 @@ body{
     font-size:3rem;
 
     margin-bottom:40px;
+
 }
+
+/* ======================
+   EINLEITUNG
+====================== */
 
 .portfolio-intro{
 
@@ -283,18 +294,22 @@ body{
     max-width:800px;
 
     margin:0 auto 70px auto;
+
 }
 
 .portfolio-intro p{
 
-    line-height:1.8;
-
     color:#d6d6d6;
 
+    line-height:1.8;
+
     margin-bottom:15px;
+
 }
 
-/* Layout */
+/* ======================
+   LAYOUT
+====================== */
 
 .portfolio-container{
 
@@ -303,9 +318,12 @@ body{
     gap:50px;
 
     align-items:flex-start;
+
 }
 
-/* Skill Menü */
+/* ======================
+   LINKES MENÜ
+====================== */
 
 .skill-menu{
 
@@ -316,7 +334,12 @@ body{
     border-radius:25px;
 
     overflow:hidden;
+
+    flex-shrink:0;
+
 }
+
+/* Einzelner Menüpunkt */
 
 .skill{
 
@@ -324,13 +347,15 @@ body{
 
     padding:22px 22px 22px 45px;
 
-    border-bottom:
-    1px solid rgba(255,255,255,0.08);
-
     cursor:pointer;
 
     transition:0.3s;
+
+    border-bottom:1px solid rgba(255,255,255,0.08);
+
 }
+
+/* Goldenes Symbol */
 
 .skill::before{
 
@@ -343,41 +368,57 @@ body{
     color:#E5DE9F;
 
     opacity:0;
+
+    transition:.3s;
+
 }
 
 .skill:hover::before,
 .skill.active::before{
 
     opacity:1;
+
 }
+
+/* Hover */
 
 .skill:hover{
 
-    background:
-    rgba(106,27,154,0.15);
+    background:rgba(106,27,154,.15);
 
     color:#E5DE9F;
+
 }
+
+/* Aktiver Bereich */
 
 .skill.active{
 
-    background:
-    rgba(106,27,154,0.25);
+    background:rgba(106,27,154,.25);
 
     color:#E5DE9F;
 
-    border-left:
-    4px solid #E5DE9F;
+    border-left:4px solid #E5DE9F;
+
 }
 
-/* Showcase */
+/* ======================
+   RECHTE SEITE
+====================== */
 
 .portfolio-showcase{
 
     flex:1;
+
 }
 
+/* ======================
+   BILDERGALERIE
+====================== */
+
 .showcase-image{
+
+    position:relative;
 
     height:450px;
 
@@ -385,19 +426,93 @@ body{
 
     border-radius:25px;
 
+    overflow:hidden;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
-    font-family:
-    "Cinzel Decorative", serif;
+    margin-bottom:30px;
 
-    color:#E5DE9F;
+    background:#0f0b14;
+
+}
+
+/* Das Bild */
+
+.showcase-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    transition:.35s;
+
+}
+
+/* ======================
+   PFEILE
+====================== */
+
+.slider-btn{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
 
     font-size:1.8rem;
 
-    margin-bottom:30px;
+    color:#E5DE9F;
+
+    background:rgba(0,0,0,.55);
+
+    transition:.3s;
+
+    z-index:5;
+
 }
+
+.slider-btn:hover{
+
+    background:#6A1B9A;
+
+}
+
+/* Linker Pfeil */
+
+.slider-btn.left{
+
+    left:20px;
+
+}
+
+/* Rechter Pfeil */
+
+.slider-btn.right{
+
+    right:20px;
+
+}
+
+/* ======================
+   INFOBOX
+====================== */
 
 .showcase-info{
 
@@ -405,27 +520,39 @@ body{
 
     border-radius:25px;
 
-    padding:30px;
+    padding:35px;
+
 }
+
+/* Überschrift */
 
 .showcase-info h3{
 
-    font-family:
-    "Cinzel Decorative", serif;
+    font-family:"Cinzel Decorative", serif;
 
     color:#E5DE9F;
 
     margin-bottom:20px;
+
+    font-size:2rem;
+
 }
+
+/* Beschreibung */
 
 .showcase-info p{
 
     color:#d6d6d6;
 
-    line-height:1.8;
+    line-height:1.9;
 
-    margin-bottom:20px;
+    margin-bottom:25px;
+
 }
+
+/* ======================
+   SOFTWARE TAGS
+====================== */
 
 .software-tags{
 
@@ -434,17 +561,49 @@ body{
     gap:15px;
 
     flex-wrap:wrap;
+
 }
 
 .software-tags span{
 
+    padding:10px 18px;
+
     border:1px solid #E5DE9F;
+
+    border-radius:25px;
 
     color:#E5DE9F;
 
-    padding:8px 15px;
+    transition:.3s;
 
-    border-radius:20px;
+}
+
+.software-tags span:hover{
+
+    background:#E5DE9F;
+
+    color:#120d17;
+
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+
+@media(max-width:1100px){
+
+    .portfolio-container{
+
+        flex-direction:column;
+
+    }
+
+    .skill-menu{
+
+        width:100%;
+
+    }
+
 }
 
 /* ======================
