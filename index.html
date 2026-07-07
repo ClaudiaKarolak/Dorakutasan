@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!-- ==========================================
-     DORAKUTASAN PORTFOLIO
-     Startseite (index.html)
+     DORAKUTASAN Startseite (index.html)
 ========================================== -->
 
 <html lang="de">
@@ -212,9 +211,17 @@
 
 </section>
 
+<!-- ==========================================
+     PORTFOLIO
+========================================== -->
+
 <section id="portfolio">
 
+    <!-- Überschrift -->
+
     <h2>Portfolio</h2>
+
+    <!-- Kurze Einleitung -->
 
     <div class="portfolio-intro">
 
@@ -228,95 +235,157 @@
 
     </div>
 
+
+    <!-- ==========================================
+         PORTFOLIO LAYOUT
+    ========================================== -->
+
     <div class="portfolio-container">
 
-<div class="skill-menu">
 
-    <div class="skill active"
-         onclick="changeSkill('character')">
+        <!-- ==========================================
+             LINKE SEITE
+             AUSWAHL DER KATEGORIEN
+        ========================================== -->
 
-        Character Design
+        <div class="skill-menu">
 
-    </div>
+            <div class="skill active"
+                 onclick="changeSkill('character', this)">
 
-    <div class="skill"
-         onclick="changeSkill('illustration')">
+                Character Design
 
-        Digital Illustration
+            </div>
 
-    </div>
+            <div class="skill"
+                 onclick="changeSkill('illustration', this)">
 
-    <div class="skill"
-         onclick="changeSkill('3d')">
+                Digital Illustration
 
-        3D Modelling
+            </div>
 
-    </div>
+            <div class="skill"
+                 onclick="changeSkill('3d', this)">
 
-    <div class="skill"
-         onclick="changeSkill('animation')">
+                3D Modelling
 
-        Animation
+            </div>
 
-    </div>
+            <div class="skill"
+                 onclick="changeSkill('animation', this)">
 
-    <div class="skill"
-         onclick="changeSkill('web')">
+                Animation
 
-        Web Design
+            </div>
 
-    </div>
+            <div class="skill"
+                 onclick="changeSkill('web', this)">
 
-    <div class="skill"
-         onclick="changeSkill('uiux')">
+                Web Design
 
-        UI/UX Basics
+            </div>
 
-    </div>
+            <div class="skill"
+                 onclick="changeSkill('uiux', this)">
 
-</div>
+                UI / UX Basics
 
-             <!-- ================================= -->
-<!-- PORTFOLIO BILDGALERIE -->
-<!-- ================================= -->
+            </div>
 
-<div class="showcase-image">
+        </div>
 
-    <!-- Linker Pfeil -->
-    <button class="slider-btn left" id="prevImage">
-        ❮
-    </button>
 
-    <!-- Aktuelles Bild -->
-    <img
-        id="showcaseImage"
-        src="images/WholeBody.png"
-        alt="Portfolio Bild">
 
-    <!-- Rechter Pfeil -->
-    <button class="slider-btn right" id="nextImage">
-        ❯
-    </button>
+        <!-- ==========================================
+             RECHTE SEITE
+             PORTFOLIO SHOWCASE
+        ========================================== -->
 
-</div>
+        <div class="portfolio-showcase">
+
+
+            <!-- ==========================================
+                 BILDGALERIE
+            ========================================== -->
+
+            <div class="showcase-image">
+
+                <!-- Linker Pfeil -->
+
+                <button
+                    class="slider-btn left"
+                    id="prevImage">
+
+                    ❮
+
+                </button>
+
+
+                <!-- Aktuelles Bild -->
+
+                <img
+                    id="showcaseImage"
+                    src="images/Character 1.png"
+                    alt="Character Design">
+
+
+                <!-- Rechter Pfeil -->
+
+                <button
+                    class="slider-btn right"
+                    id="nextImage">
+
+                    ❯
+
+                </button>
+
+            </div>
+
+
+
+            <!-- ==========================================
+                 BESCHREIBUNG
+            ========================================== -->
 
             <div class="showcase-info">
 
-               <h3 id="skillTitle">
-    Character Design
-</h3>
+                <!-- Titel -->
 
-                   <p id="skillDescription">
-    Entwicklung eigener Charaktere, Konzepte und Designs für kreative Projekte.
-</p>
+                <h3 id="skillTitle">
 
-<div class="software-tags" id="softwareTags">
+                    Character Design
 
-    <span>Clip Studio Paint</span>
-    <span>VRoid Studio</span>
-    <span>Design</span>
+                </h3>
 
-</div>
+
+                <!-- Beschreibung -->
+
+                <p id="skillDescription">
+
+                    Entwicklung eigener Charaktere,
+                    Konzepte und Designs für kreative Projekte.
+                    Zusätzlich entstehen Fanmade-Designs,
+                    alternative Skins und kreative
+                    Neuinterpretationen bekannter Figuren.
+
+                </p>
+
+
+                <!-- ==========================================
+                     SOFTWARE
+                ========================================== -->
+
+                <div
+                    class="software-tags"
+                    id="softwareTags">
+
+                    <span>Clip Studio Paint</span>
+
+                    <span>VRoid Studio</span>
+
+                    <span>Design</span>
+
+                </div>
 
             </div>
 
@@ -325,7 +394,6 @@
     </div>
 
 </section>
-
 
 <section class="section-divider">
 
