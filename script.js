@@ -217,7 +217,7 @@ const skins = [
 
 {
     name: "Rampage Rabbit",
-    subtitle: "VALORANT COLLECTION",
+    subtitle: "NEON WHITE COLLECTION",
     description: "Rampage Rabbit bewegt sich mit unglaublicher Geschwindigkeit durch jede Situation. Hinter ihrem verspielten Auftreten verbirgt sich jedoch ein unberechenbarer Kampfstil. Mit ihrer Liebe zu Hasen, Neonfarben und einem Hauch Wahnsinn hinterlässt sie überall ihre ganz eigene Spur.",
     inspiration: "✦ DESIGN INSPIRED BY NEON WHITE",
     image: "images/Purple Neon Dorakutasan.png",
