@@ -454,9 +454,9 @@ body{
 
 }
 
-/* ======================
-   PFEILE
-====================== */
+/* ==========================================
+   GALERIE PFEILE
+========================================== */
 
 .slider-btn{
 
@@ -474,23 +474,26 @@ body{
 
     border-radius:50%;
 
-    cursor:pointer;
-
-    font-size:1.8rem;
+    background:#111;
 
     color:#E5DE9F;
 
-    background:rgba(0,0,0,.55);
+    font-size:2rem;
 
-    transition:.3s;
+    cursor:pointer;
 
-    z-index:5;
+    transition:0.3s;
 
+    z-index:10;
 }
 
 .slider-btn:hover{
 
     background:#6A1B9A;
+
+    color:white;
+
+    transform:translateY(-50%) scale(1.1);
 
 }
 
