@@ -1,94 +1,297 @@
-function changeSkill(skill){
+/* ==========================================
+   PORTFOLIO DATEN
+========================================== */
 
-  const skills =
-document.querySelectorAll(".skill");
+const portfolioData = {
 
-skills.forEach(item => {
-    item.classList.remove("active");
-});
-  
-    const title =
-    document.getElementById("skillTitle");
+    character:{
 
-    const description =
-    document.getElementById("skillDescription");
+        title:"Character Design",
 
-    const showcase =
-    document.getElementById("showcaseImage");
+        description:
+        "Entwicklung eigener Charaktere, Konzepte und Designs für kreative Projekte. Neben Originalcharakteren entstehen auch Fanmade-Designs, alternative Skins und kreative Neuinterpretationen bekannter Figuren, beispielsweise aus League of Legends.",
 
-    if(skill === "character"){
+        software:[
+            "Clip Studio Paint",
+            "VRoid Studio",
+            "Design"
+        ],
 
-        title.innerText =
-        "Character Design";
+        images:[
+            "images/Character 1.png",
+            "images/Character 2.png",
+            "images/Character 3.png",
+            "images/Character 4.png"
+        ]
 
-        description.innerText =
-        "Entwicklung eigener Charaktere, Konzepte und Designs für kreative Projekte.";
+    },
 
-        showcase.innerText =
-        "CHARACTER DESIGN";
+
+
+    illustration:{
+
+        title:"Digital Illustration",
+
+        description:
+        "Digitale Zeichnungen und Illustrationen mit Fokus auf Charaktere und visuelle Gestaltung. Neben eigenen Werken entstehen auch Fanarts und Illustrationen inspirierter Charaktere aus verschiedenen Games und Serien. Besonderen Wert lege ich dabei auf Anatomie, Ausdruck und Komposition.",
+
+        software:[
+            "Clip Studio Paint",
+            "ibis Paint",
+            "Design"
+        ],
+
+        images:[
+            "images/hot nanami ahhhh.jpg",
+            "images/nanami takes his clothes off.jpg",
+            "images/jhin female.jpg"
+        ]
+
+    },
+
+
+
+    "3d":{
+
+        title:"3D Modelling",
+
+        description:
+        "Erstellung eigener 3D-Modelle und Assets mit Fokus auf Charaktere und VTuber-Modelle.",
+
+        software:[
+            "Blender",
+            "VRoid Studio"
+        ],
+
+        images:[
+            "images/3d.png"
+        ]
+
+    },
+
+
+
+    animation:{
+
+        title:"Animation",
+
+        description:
+        "Grundlagen der Animation und Bewegungsdarstellung für digitale Medien.",
+
+        software:[
+            "After Effects",
+            "Clip Studio Paint"
+        ],
+
+        images:[
+            "images/animation.png"
+        ]
+
+    },
+
+
+
+    web:{
+
+        title:"Web Design",
+
+        description:
+        "Konzeption und Entwicklung moderner Webseiten mit HTML, CSS und JavaScript.",
+
+        software:[
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+
+        images:[
+            "images/web.png"
+        ]
+
+    },
+
+
+
+    uiux:{
+
+        title:"UI / UX Basics",
+
+        description:
+        "Erste Erfahrungen im Bereich Benutzeroberflächen, Nutzerführung und Interface Design.",
+
+        software:[
+            "Figma",
+            "Design"
+        ],
+
+        images:[
+            "images/uiux.png"
+        ]
+
     }
 
-    if(skill === "illustration"){
+};
 
-        title.innerText =
-        "Digital Illustration";
+/* ==========================================
+   PORTFOLIO GALERIE
+========================================== */
 
-        description.innerText =
-        "Digitale Zeichnungen und Illustrationen mit Fokus auf Charaktere und visuelle Gestaltung.";
+let currentSkill = "character";
+let currentImage = 0;
 
-        showcase.innerText =
-        "DIGITAL ILLUSTRATION";
-    }
 
-    if(skill === "3d"){
+/* Elemente */
 
-        title.innerText =
-        "3D Modelling";
+const showcaseImage =
+document.getElementById("showcaseImage");
 
-        description.innerText =
-        "Erstellung von 3D-Modellen und Assets mit Blender.";
+const skillTitle =
+document.getElementById("skillTitle");
 
-        showcase.innerText =
-        "3D MODELLING";
-    }
+const skillDescription =
+document.getElementById("skillDescription");
 
-    if(skill === "animation"){
+const softwareTags =
+document.getElementById("softwareTags");
 
-        title.innerText =
-        "Animation";
 
-        description.innerText =
-        "Grundlagen der Animation und Bewegungsdarstellung für digitale Medien.";
+/* ==========================================
+   SOFTWARE TAGS AKTUALISIEREN
+========================================== */
 
-        showcase.innerText =
-        "ANIMATION";
-    }
+function updateSoftware(tags){
 
-    if(skill === "web"){
+    softwareTags.innerHTML = "";
 
-        title.innerText =
-        "Web Design";
+    tags.forEach(tag=>{
 
-        description.innerText =
-        "Gestaltung moderner Webseiten mit Fokus auf Benutzerfreundlichkeit und Ästhetik.";
+        const span =
+        document.createElement("span");
 
-        showcase.innerText =
-        "WEB DESIGN";
-    }
+        span.textContent = tag;
 
-    if(skill === "uiux"){
+        softwareTags.appendChild(span);
 
-        title.innerText =
-        "UI/UX Basics";
+    });
 
-        description.innerText =
-        "Erste Erfahrungen in Interface Design, Nutzerführung und User Experience.";
-
-        showcase.innerText =
-        "UI / UX";
-    }
 }
 
+
+/* ==========================================
+   BILD AKTUALISIEREN
+========================================== */
+
+function updateImage(){
+
+    showcaseImage.src =
+    portfolioData[currentSkill]
+    .images[currentImage];
+
+}
+
+
+/* ==========================================
+   GESAMTEN BEREICH AKTUALISIEREN
+========================================== */
+
+function updatePortfolio(){
+
+    const data =
+    portfolioData[currentSkill];
+
+    skillTitle.textContent =
+    data.title;
+
+    skillDescription.textContent =
+    data.description;
+
+    updateSoftware(data.software);
+
+    updateImage();
+
+}
+
+/* ==========================================
+   KATEGORIE WECHSELN
+========================================== */
+
+function changeSkill(skill, element){
+
+    currentSkill = skill;
+
+    currentImage = 0;
+
+    document
+    .querySelectorAll(".skill")
+    .forEach(item=>{
+
+        item.classList.remove("active");
+
+    });
+
+    element.classList.add("active");
+
+    updatePortfolio();
+
+}
+
+/* ==========================================
+   BILDER WECHSELN
+========================================== */
+
+const prevButton =
+document.getElementById("prevImage");
+
+const nextButton =
+document.getElementById("nextImage");
+
+
+/* Linker Pfeil */
+
+prevButton.addEventListener("click",()=>{
+
+    const images =
+    portfolioData[currentSkill].images;
+
+    currentImage--;
+
+    if(currentImage < 0){
+
+        currentImage =
+        images.length - 1;
+
+    }
+
+    updateImage();
+
+});
+
+
+/* Rechter Pfeil */
+
+nextButton.addEventListener("click",()=>{
+
+    const images =
+    portfolioData[currentSkill].images;
+
+    currentImage++;
+
+    if(currentImage >= images.length){
+
+        currentImage = 0;
+
+    }
+
+    updateImage();
+
+});
+
+
+/* ==========================================
+   STARTSEITE LADEN
+========================================== */
+
+updatePortfolio();
 
 
 /* ==========================================
