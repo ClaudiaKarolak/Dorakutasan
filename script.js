@@ -129,14 +129,16 @@ const portfolioData = {
 };
     
 /* ==========================================
-   PORTFOLIO GALERIE
+   PORTFOLIO VARIABLEN
 ========================================== */
 
 let currentSkill = "character";
 let currentImage = 0;
 
 
-/* Elemente */
+/* ==========================================
+   HTML ELEMENTE
+========================================== */
 
 const showcaseImage =
 document.getElementById("showcaseImage");
@@ -149,6 +151,12 @@ document.getElementById("skillDescription");
 
 const softwareTags =
 document.getElementById("softwareTags");
+
+const prevButton =
+document.getElementById("prevImage");
+
+const nextButton =
+document.getElementById("nextImage");
 
 
 /* ==========================================
@@ -180,14 +188,16 @@ function updateSoftware(tags){
 function updateImage(){
 
     showcaseImage.src =
-    portfolioData[currentSkill]
-    .images[currentImage];
+    portfolioData[currentSkill].images[currentImage];
+
+    showcaseImage.alt =
+    portfolioData[currentSkill].title;
 
 }
 
 
 /* ==========================================
-   GESAMTEN BEREICH AKTUALISIEREN
+   GESAMTEN PORTFOLIOBEREICH AKTUALISIEREN
 ========================================== */
 
 function updatePortfolio(){
@@ -225,24 +235,20 @@ function changeSkill(skill, element){
 
     });
 
-    element.classList.add("active");
+    if(element){
+
+        element.classList.add("active");
+
+    }
 
     updatePortfolio();
 
 }
 
+
 /* ==========================================
-   BILDER WECHSELN
+   LINKER PFEIL
 ========================================== */
-
-const prevButton =
-document.getElementById("prevImage");
-
-const nextButton =
-document.getElementById("nextImage");
-
-
-/* Linker Pfeil */
 
 prevButton.addEventListener("click",()=>{
 
@@ -263,7 +269,9 @@ prevButton.addEventListener("click",()=>{
 });
 
 
-/* Rechter Pfeil */
+/* ==========================================
+   RECHTER PFEIL
+========================================== */
 
 nextButton.addEventListener("click",()=>{
 
@@ -284,11 +292,14 @@ nextButton.addEventListener("click",()=>{
 
 
 /* ==========================================
-   STARTSEITE LADEN
+   PORTFOLIO BEIM LADEN INITIALISIEREN
 ========================================== */
 
-updatePortfolio();
+window.addEventListener("DOMContentLoaded",()=>{
 
+    updatePortfolio();
+
+});
 
 /* ==========================================
    CONCEPT ART ZOOM
