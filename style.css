@@ -1,58 +1,88 @@
 /* ==========================================================
+   DORAKUTASAN PORTFOLIO
+   STYLE SHEET
+========================================================== */
+/* ==========================================================
    GOOGLE FONTS
-   - Cinzel Decorative: Überschriften
-   - Lora: Fließtext
 ========================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Lora:wght@400;500;600&display=swap');
 
 /* ==========================================================
-   GRUNDEINSTELLUNGEN
-   - Standardabstände entfernen
-   - Box-Modell vereinheitlichen
+   CSS VARIABLEN
+========================================================== */
+
+:root{
+
+    --background:#0D0B12;
+
+    --card:#120d17;
+
+    --purple:#6A1B9A;
+
+    --gold:#E5DE9F;
+
+    --text:#d6d6d6;
+
+    --white:#ffffff;
+
+}
+
+/* ==========================================================
+   RESET
 ========================================================== */
 
 *{
+
     margin:0;
     padding:0;
+
     box-sizing:border-box;
+
 }
 
 /* ==========================================================
    HTML
-   - Sanftes Scrollen zwischen den Bereichen
 ========================================================== */
 
 html{
+
     scroll-behavior:smooth;
+
 }
 
 /* ==========================================================
    BODY
-   - Hintergrundfarbe
-   - Standardschrift
-   - Standardtextfarbe
 ========================================================== */
 
 body{
-    background:#0D0B12;
-    color:white;
+
+    background:var(--background);
+
+    color:var(--white);
+
     font-family:"Lora", serif;
+
+    overflow-x:hidden;
+
 }
 
 /* ==========================================================
-   NAVIGATIONSBAR
+   NAVIGATION
 ========================================================== */
 
 .navbar{
 
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
     padding:25px 60px;
 
-    border-bottom:3px solid #6A1B9A;
+    border-bottom:3px solid var(--purple);
+
 }
 
 /* Logo */
@@ -60,137 +90,157 @@ body{
 .logo{
 
     font-family:"Cinzel Decorative", serif;
-    color:#E5DE9F;
+
+    color:var(--gold);
+
     font-size:2.5rem;
 
 }
 
-/* Untertitel unter dem Logo */
+/* Untertitel */
 
 .logo-subtitle{
 
-    font-size:0.8rem;
-    color:#cfcfcf;
     margin-top:5px;
+
+    color:#cfcfcf;
+
+    font-size:.8rem;
 
 }
 
-/* Navigationslinks */
+/* Navigation */
 
 .nav-links{
 
     display:flex;
+
     gap:30px;
 
     list-style:none;
 
 }
 
-/* Einzelne Links */
+/* Links */
 
 .nav-links a{
 
     color:white;
+
     text-decoration:none;
+
+    transition:.25s;
 
 }
 
-/* Hovereffekt */
+/* Hover */
 
 .nav-links a:hover{
 
-    color:#E5DE9F;
+    color:var(--gold);
 
 }
 
 /* ==========================================================
-   HERO BEREICH
-   - Erste Ansicht nach dem Laden der Website
+   HERO
 ========================================================== */
 
 .hero{
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
-    height:90vh;
+    min-height:90vh;
 
 }
 
 /* ==========================================================
    HERO SHOWREEL
-   - Großes Vorschaubild im Hero-Bereich
 ========================================================== */
 
 .hero-showreel{
 
     width:90%;
+
     max-width:1200px;
 
     margin:80px auto;
 
-    border:2px dashed #6A1B9A;
-    border-radius:25px;
-
     overflow:hidden;
+
+    border:2px dashed var(--purple);
+
+    border-radius:25px;
 
 }
 
-/* Bild im Showreel */
+/* Hero GIF */
 
 .hero-showreel img{
 
-    width:100%;
-    height:auto;
-
     display:block;
 
-    object-fit:cover;
+    width:100%;
+
+    height:auto;
 
 }
 
 /* ==========================================================
-   SEKTIONS-TRENNER
-   - Linie zwischen den einzelnen Bereichen
+   SECTION DIVIDER
 ========================================================== */
 
 .section-divider{
 
     display:flex;
-    align-items:center;
+
     justify-content:center;
+
+    align-items:center;
 
     gap:25px;
 
     width:80%;
+
     margin:80px auto;
 
 }
 
-/* Linke und rechte Linie */
+/* Linien */
 
 .divider-line{
 
     flex:1;
+
     height:2px;
 
     background:linear-gradient(
+
         to right,
+
         transparent,
-        #6A1B9A,
-        #E5DE9F,
-        #6A1B9A,
+
+        var(--purple),
+
+        var(--gold),
+
+        var(--purple),
+
         transparent
+
     );
 
 }
 
-/* Symbol in der Mitte */
+/* Symbol */
 
 .divider-symbol{
 
-    color:#E5DE9F;
+    color:var(--gold);
+
     font-size:2rem;
 
 }
@@ -205,23 +255,29 @@ body{
 
 }
 
-/* Überschrift */
+
+/* ==========================================================
+   ÜBERSCHRIFT
+========================================================== */
 
 #about h2{
 
-    text-align:center;
+    margin-bottom:70px;
 
-    color:#E5DE9F;
+    text-align:center;
 
     font-family:"Cinzel Decorative", serif;
 
     font-size:3rem;
 
-    margin-bottom:70px;
+    color:var(--gold);
 
 }
 
-/* Layout für Bild und Text */
+
+/* ==========================================================
+   LAYOUT
+========================================================== */
 
 .about-container{
 
@@ -239,6 +295,7 @@ body{
 
 }
 
+
 /* ==========================================================
    TEXTBEREICH
 ========================================================== */
@@ -251,17 +308,16 @@ body{
 
 }
 
-/* Absätze */
-
 .about-text p{
-
-    line-height:2;
 
     margin-bottom:25px;
 
-    color:#d6d6d6;
+    color:var(--text);
+
+    line-height:2;
 
 }
+
 
 /* ==========================================================
    PROFILBILD
@@ -275,9 +331,9 @@ body{
 
 }
 
-/* Bild */
-
 .about-photo{
+
+    display:block;
 
     width:100%;
 
@@ -285,19 +341,15 @@ body{
 
     object-fit:cover;
 
-    border:2px solid #6A1B9A;
+    border:2px solid var(--purple);
 
     border-radius:25px;
 
-    display:block;
-
     box-shadow:0 0 20px rgba(106,27,154,.25);
 
-    transition:.35s ease;
+    transition:.35s;
 
 }
-
-/* Hoveranimation */
 
 .about-photo:hover{
 
@@ -307,21 +359,22 @@ body{
 
 }
 
+
 /* ==========================================================
-   ZEITLEISTE (TIMELINE)
+   TIMELINE
 ========================================================== */
 
 .timeline{
 
-    margin-top:50px;
-
     display:flex;
+
     flex-direction:column;
+
     align-items:center;
 
-}
+    margin-top:50px;
 
-/* Einzelner Timeline-Eintrag */
+}
 
 .timeline-item{
 
@@ -329,31 +382,27 @@ body{
 
     align-items:baseline;
 
-    justify-content:flex-start;
-
     width:420px;
 
     margin-bottom:30px;
 
 }
 
-/* Jahreszahl */
-
 .timeline-item span{
 
     width:90px;
 
-    color:#6A1B9A;
-
-    font-weight:bold;
-
-    font-size:1.3rem;
+    margin-right:25px;
 
     text-align:right;
 
-    margin-right:25px;
+    color:var(--purple);
 
-   }
+    font-size:1.3rem;
+
+    font-weight:bold;
+
+}
 
 /* ==========================================================
    PORTFOLIO
@@ -365,69 +414,78 @@ body{
 
 }
 
-/* ==========================================================
-   PORTFOLIO ÜBERSCHRIFT
-========================================================== */
-
 #portfolio h2{
 
-    text-align:center;
-    font-family:"Cinzel Decorative", serif;
-    color:#E5DE9F;
-    font-size:3rem;
     margin-bottom:40px;
+
+    text-align:center;
+
+    font-family:"Cinzel Decorative", serif;
+
+    font-size:3rem;
+
+    color:var(--gold);
 
 }
 
+
 /* ==========================================================
-   EINLEITUNGSTEXT
+   EINLEITUNG
 ========================================================== */
 
 .portfolio-intro{
 
-    text-align:center;
     max-width:800px;
-    margin:0 auto 70px auto;
+
+    margin:0 auto 70px;
+
+    text-align:center;
 
 }
 
 .portfolio-intro p{
 
-    color:#d6d6d6;
-    line-height:1.8;
     margin-bottom:15px;
+
+    color:var(--text);
+
+    line-height:1.8;
 
 }
 
+
 /* ==========================================================
-   GESAMTES PORTFOLIO LAYOUT
+   LAYOUT
 ========================================================== */
 
 .portfolio-container{
 
     display:flex;
+
     gap:50px;
+
     align-items:flex-start;
 
 }
 
+
 /* ==========================================================
-   LINKES MENÜ
+   MENÜ
 ========================================================== */
 
 .skill-menu{
 
+    overflow:hidden;
+
     width:300px;
 
-    border:2px solid #6A1B9A;
-    border-radius:25px;
-
-    overflow:hidden;
     flex-shrink:0;
 
-}
+    border:2px solid var(--purple);
 
-/* Einzelner Menüpunkt */
+    border-radius:25px;
+
+}
 
 .skill{
 
@@ -435,30 +493,29 @@ body{
 
     padding:22px 22px 22px 45px;
 
-    cursor:pointer;
-    transition:.3s;
-
     border-bottom:1px solid rgba(255,255,255,.08);
 
-}
+    cursor:pointer;
 
-/* Symbol links */
+    transition:.3s;
+
+}
 
 .skill::before{
 
     content:"◈";
 
     position:absolute;
+
     left:18px;
 
-    color:#E5DE9F;
+    color:var(--gold);
 
     opacity:0;
+
     transition:.3s;
 
 }
-
-/* Symbol anzeigen */
 
 .skill:hover::before,
 .skill.active::before{
@@ -467,29 +524,27 @@ body{
 
 }
 
-/* Hover */
-
 .skill:hover{
 
     background:rgba(106,27,154,.15);
-    color:#E5DE9F;
+
+    color:var(--gold);
 
 }
-
-/* Aktiver Menüpunkt */
 
 .skill.active{
 
     background:rgba(106,27,154,.25);
 
-    color:#E5DE9F;
+    border-left:4px solid var(--gold);
 
-    border-left:4px solid #E5DE9F;
+    color:var(--gold);
 
 }
 
+
 /* ==========================================================
-   RECHTE SEITE
+   SHOWCASE
 ========================================================== */
 
 .portfolio-showcase{
@@ -499,55 +554,205 @@ body{
 }
 
 /* ==========================================================
-   BILDERGALERIE
+   VTUBER PROJECT
 ========================================================== */
 
-.showcase-image{
+#vtuber{
 
-    position:relative;
+    padding:120px 10%;
 
-    width:100%;
-    height:520px;
+}
+
+#vtuber h2{
+
+    margin-bottom:80px;
+
+    text-align:center;
+
+    font-family:"Cinzel Decorative", serif;
+
+    font-size:3rem;
+
+    color:var(--gold);
+
+}
+
+/* ==========================================================
+   LAYOUT
+========================================================== */
+
+.vtuber-top{
 
     display:flex;
-    justify-content:center;
-    align-items:center;
+
+    flex-direction:column;
+
+    gap:60px;
+
+}
+
+/* ==========================================================
+   TEXT
+========================================================== */
+
+.vtuber-text h3{
+
+    margin-bottom:25px;
+
+    font-family:"Cinzel Decorative", serif;
+
+    color:var(--gold);
+
+}
+
+.vtuber-text p{
+
+    margin-bottom:20px;
+
+    color:var(--text);
+
+    line-height:2;
+
+}
+
+/* ==========================================================
+   AVATAR SHOWCASE
+========================================================== */
+
+.vtuber-showcase{
+
+    width:100%;
+
+    margin-top:70px;
+
+}
+
+.showcase-title{
+
+    margin-bottom:40px;
+
+    text-align:center;
+
+    font-family:"Cinzel Decorative", serif;
+
+    font-size:2.6rem;
+
+    color:var(--gold);
+
+}
+
+/* ==========================================================
+   AVATAR BILD
+========================================================== */
+
+.concept-container{
 
     overflow:hidden;
 
-    background:#0f0b14;
+    width:100%;
 
-    border:2px solid #6A1B9A;
-    border-radius:25px;
+    max-width:1200px;
 
-    margin-bottom:30px;
+    margin:auto;
+
+    border:2px solid var(--purple);
+
+    border-radius:22px;
+
+    background:var(--card);
 
 }
 
-/* ==========================================================
-   PORTFOLIO BILD
-========================================================== */
-
-.showcase-image img{
-
-    width:100%;
-    height:100%;
+.concept-image{
 
     display:block;
 
-    object-fit:contain;
+    width:100%;
 
-    position:relative;
+}
+    
+/* ==========================================================
+   CHARACTER ART
+========================================================== */
 
-    z-index:1;
+#character-art{
+
+    padding:120px 10%;
 
 }
 
+
 /* ==========================================================
-   SLIDER PFEILE
+   ÜBERSCHRIFT
 ========================================================== */
 
-.slider-btn{
+#character-art h2{
+
+    text-align:center;
+
+    font-family:"Cinzel Decorative", serif;
+
+    font-size:3rem;
+
+    color:var(--gold);
+
+    margin-bottom:80px;
+
+}
+
+
+/* ==========================================================
+   GESAMTES LAYOUT
+========================================================== */
+
+.character-container{
+
+    display:flex;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+
+/* ==========================================================
+   BILDGALERIE
+========================================================== */
+
+.character-showcase{
+
+    position:relative;
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+.character-showcase img{
+
+    width:100%;
+
+    max-width:700px;
+
+    border:2px solid var(--purple);
+
+    border-radius:25px;
+
+}
+
+
+/* ==========================================================
+   PFEILE
+========================================================== */
+
+.arrow{
 
     position:absolute;
 
@@ -555,145 +760,279 @@ body{
 
     transform:translateY(-50%);
 
-    width:65px;
-    height:65px;
+    width:60px;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    height:60px;
 
     border:none;
-    outline:none;
 
     border-radius:50%;
 
-    background:#111;
+    background:rgba(15,11,20,.9);
 
-    color:#E5DE9F;
+    color:var(--gold);
 
     font-size:34px;
-    font-weight:bold;
 
     cursor:pointer;
 
-    z-index:9999;
-
-    transition:.3s ease;
+    transition:.3s;
 
 }
 
 
 /* Hover */
 
-.slider-btn:hover{
+.arrow:hover{
 
-    background:#6A1B9A;
+    background:var(--purple);
 
     color:white;
-
-    transform:translateY(-50%) scale(1.1);
 
 }
 
 
 /* Linker Pfeil */
 
-.slider-btn.left{
+.arrow-left{
 
-    left:30px;
+    left:25px;
 
 }
 
 
 /* Rechter Pfeil */
 
-.slider-btn.right{
+.arrow-right{
 
-    right:30px;
-
-}
-
-/* ======================
-   INFOBOX
-====================== */
-
-.showcase-info{
-
-    border:2px solid #6A1B9A;
-
-    border-radius:25px;
-
-    padding:35px;
+    right:25px;
 
 }
 
-/* Überschrift */
 
-.showcase-info h3{
+/* ==========================================================
+   BESCHREIBUNG
+========================================================== */
+
+.character-info{
+
+    flex:1;
+
+}
+
+
+.character-info h3{
+
+    color:var(--gold);
 
     font-family:"Cinzel Decorative", serif;
 
-    color:#E5DE9F;
-
     margin-bottom:20px;
-
-    font-size:2rem;
 
 }
 
-/* Beschreibung */
 
-.showcase-info p{
+.character-info p{
 
-    color:#d6d6d6;
+    color:var(--text);
 
     line-height:1.9;
 
-    margin-bottom:25px;
+}
+
+/* ==========================================================
+   CONTACT
+========================================================== */
+
+#contact{
+
+    padding:120px 10%;
 
 }
 
-/* ======================
-   SOFTWARE TAGS
-====================== */
 
-.software-tags{
+/* ==========================================================
+   ÜBERSCHRIFT
+========================================================== */
+
+#contact h2{
+
+    text-align:center;
+
+    font-family:"Cinzel Decorative", serif;
+
+    font-size:3rem;
+
+    color:var(--gold);
+
+    margin-bottom:80px;
+
+}
+
+
+/* ==========================================================
+   LAYOUT
+========================================================== */
+
+.contact-container{
 
     display:flex;
 
-    gap:15px;
+    justify-content:space-between;
 
-    flex-wrap:wrap;
+    gap:80px;
 
 }
 
-.software-tags span{
 
-    padding:10px 18px;
+/* ==========================================================
+   INFORMATIONEN
+========================================================== */
 
-    border:1px solid #E5DE9F;
+.contact-info{
+
+    flex:1;
+
+}
+
+
+.contact-info h3{
+
+    margin-bottom:20px;
+
+    color:var(--gold);
+
+    font-family:"Cinzel Decorative", serif;
+
+}
+
+
+.contact-info p{
+
+    color:var(--text);
+
+    line-height:2;
+
+}
+
+
+/* ==========================================================
+   LINKTREE CARD
+========================================================== */
+
+.linktree-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:420px;
+
+    height:320px;
+
+    background:var(--card);
+
+    border:2px solid var(--purple);
 
     border-radius:25px;
 
-    color:#E5DE9F;
+    text-decoration:none;
 
     transition:.3s;
 
 }
 
-.software-tags span:hover{
 
-    background:#E5DE9F;
+.linktree-card:hover{
 
-    color:#120d17;
+    transform:translateY(-8px);
+
+    box-shadow:0 0 25px rgba(106,27,154,.45);
 
 }
 
-/* ======================
-   RESPONSIVE
-====================== */
+
+.linktree-icon{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+}
+
+
+.linktree-card h4{
+
+    font-family:"Cinzel Decorative", serif;
+
+    color:var(--gold);
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+
+.linktree-card p{
+
+    width:80%;
+
+    text-align:center;
+
+    color:var(--text);
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+
+.linktree-card span{
+
+    color:var(--gold);
+
+    font-weight:bold;
+
+}
+
+/* ==========================================================
+   RESPONSIVE DESIGN
+========================================================== */
 
 @media(max-width:1100px){
+
+    /* About */
+
+    .about-container{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .about-text{
+
+        width:100%;
+
+    }
+
+    .about-image{
+
+        width:100%;
+
+        max-width:400px;
+
+    }
+
+
+    /* Portfolio */
 
     .portfolio-container{
 
@@ -707,1185 +1046,68 @@ body{
 
     }
 
-}
 
-/* ======================
-   VTUBER PROJECT
-====================== */
+    /* Character Art */
 
-#vtuber{
+    .character-container{
 
-    padding:120px 10%;
-}
-
-#vtuber h2{
-
-    text-align:center;
-
-    font-family:"Cinzel Decorative", serif;
-
-    color:#E5DE9F;
-
-    font-size:3rem;
-
-    margin-bottom:80px;
-}
-
-.vtuber-top{
-
-    display:flex;
-    flex-direction: column;
-    gap:60px;
-
-    align-items:flex-start;
-
-    margin-bottom:60px;
-}
-
-/* TEXT */
-
-.vtuber-text{
-
-    flex:1;
-}
-
-.vtuber-text h3{
-
-    color:#E5DE9F;
-
-    font-family:"Cinzel Decorative", serif;
-
-    margin-bottom:25px;
-}
-
-.vtuber-text p{
-
-    line-height:2;
-
-    color:#d6d6d6;
-
-    margin-bottom:20px;
-}
-
-/* VIDEO */
-
-.vtuber-video{
-
-    width:600px;
-
-    height:340px;
-
-    border:2px solid #6A1B9A;
-
-    border-radius:25px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    color:#E5DE9F;
-
-    font-family:"Cinzel Decorative", serif;
-}
-
-/* ==========================================
-   VTUBER SHOWCASE
-========================================== */
-
-.vtuber-showcase{
-    width:100%;
-    margin-top:70px;
-}
-
-.showcase-title{
-
-    text-align:center;
-    color:#E5DE9F;
-    font-family:"Cinzel Decorative", serif;
-    font-size:2.6rem;
-    margin-bottom:40px;
-
-}
-
-
-/* Bild */
-
-.concept-container{
-
-    position:relative;
-    width:100%;
-    max-width:1200px;
-    margin:auto;
-    overflow:hidden;
-
-    border:2px solid #6A1B9A;
-    border-radius:22px;
-    background:#120d18;
-
-}
-
-.concept-image{
-
-    display:block;
-    width:100%;
-    transition:.55s ease;
-
-}
-
-
-/* Labels */
-
-.label{
-
-    position:absolute;
-
-    background:rgba(15,15,15,.82);
-
-    border:1px solid #E5DE9F;
-
-    color:#E5DE9F;
-
-    padding:8px 18px;
-
-    border-radius:10px;
-
-    font-family:"Cinzel Decorative",serif;
-
-    font-size:.8rem;
-
-    letter-spacing:1px;
-
-    pointer-events:none;
-
-}
-
-
-/* Positionen */
-
-.front{
-
-    top:6%;
-    left:15%;
-
-}
-
-.left{
-
-    top:8%;
-    left:46%;
-
-}
-
-.face{
-
-    top:8%;
-    right:7%;
-
-}
-
-.back{
-
-    bottom:8%;
-    left:15%;
-
-}
-
-.right{
-
-    bottom:8%;
-    left:46%;
-
-}
-
-.backface{
-
-    bottom:8%;
-    right:7%;
-
-}
-
-
-/* Navigation */
-
-.showcase-nav{
-
-    display:flex;
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:18px;
-
-    margin-top:35px;
-
-}
-
-
-.show-btn{
-
-    background:transparent;
-
-    border:2px solid #6A1B9A;
-
-    color:#E5DE9F;
-
-    padding:12px 26px;
-
-    border-radius:30px;
-
-    cursor:pointer;
-
-    transition:.25s;
-
-    font-family:"Cinzel Decorative", serif;
-
-    letter-spacing:1px;
-
-}
-
-
-.show-btn:hover{
-
-    background:#6A1B9A;
-
-    transform:translateY(-2px);
-
-}
-
-
-.show-btn.active{
-
-    background:#6A1B9A;
-
-}
-
-
-/* Handy */
-
-@media(max-width:900px){
-
-    .showcase-title{
-
-        font-size:2rem;
-
-    }
-
-    .label{
-
-        font-size:.6rem;
-
-        padding:5px 10px;
-
-    }
-
-    .showcase-nav{
-
-        gap:10px;
-
-    }
-
-    .show-btn{
-
-        font-size:.75rem;
-
-        padding:10px 16px;
-
-    }
-
-}
-    
-/* ======================
-   CHARACTER ART
-====================== */
-
-/* =========================
-   GLOBAL
-========================= */
-
-body{
-...
-}
-
-
-/* =========================
-   NAVBAR
-========================= */
-
-.navbar{
-...
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-#hero{
-...
-}
-
-
-/* =========================
-   ABOUT
-========================= */
-
-#about{
-...
-}
-
-
-/* =========================
-   PORTFOLIO
-========================= */
-
-#portfolio{
-...
-}
-
-
-/* =========================
-   CHARACTER ART
-========================= */
-
-#character-art{
-
-    width:100%;
-    padding:120px 8%;
-    background:#0D0B12;
-
-}
-
-#character-art .section-title{
-
-    text-align:center;
-    color:#F5E09F;
-    font-family:'Cinzel Decorative',serif;
-    font-size:3.5rem;
-    margin-bottom:70px;
-
-}
-
-
-/*======================================
-VIEWER
-======================================*/
-
-.character-viewer{
-
-    position:relative;
-
-    width:100%;
-    max-width:1400px;
-
-    height:700px;
-
-    margin:auto;
-
-    overflow:hidden;
-
-    border:2px dashed #6A1B9A;
-
-    border-radius:25px;
-
-    background:#0D0B12;
-
-}
-
-
-/*======================================
-ARTWORK
-======================================*/
-
-#skinArtwork{
-
-    position:absolute;
-
-    inset:0;
-
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
-
-    transition:.4s ease;
-
-}
-
-
-/*======================================
-OVERLAY
-======================================*/
-
-.artwork-overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-
-    linear-gradient(
-
-        90deg,
-
-        rgba(13,11,18,.92) 0%,
-
-        rgba(13,11,18,.70) 28%,
-
-        rgba(13,11,18,.30) 55%,
-
-        rgba(13,11,18,.08) 75%,
-
-        rgba(13,11,18,0) 100%
-
-    );
-
-}
-
-
-/*======================================
-TEXT
-======================================*/
-
-.skin-info{
-    position:absolute;
-    left:70px;
-    top:50%;
-    transform:translateY(-50%);
-    max-width:480px;
-    z-index:5;
-}
-
-/* Name */
-#skinTitle{
-    font-size:72px;
-    line-height:0.95;
-    font-weight:700;
-    color:#f3deb0;
-    text-transform:uppercase;
-    margin:10px 0 25px;
-    letter-spacing:2px;
-}
-
-/* Collection */
-.skin-category{
-    display:block;
-    font-size:17px;
-    letter-spacing:6px;
-    text-transform:uppercase;
-    color:#f2c15a;
-    font-weight:600;
-    margin-bottom:15px;
-}
-
-/* Beschreibung */
-#skinDescription{
-    font-size:20px;
-    line-height:1.8;
-    color:#f1f1f1;
-    max-width:560px;
-    margin-bottom:40px;
-}
-
-/* Inspirations-Box */
-#skinInspiration{
-    display:inline-block;
-    padding:12px 22px;
-    border:1px solid rgba(242,193,90,.45);
-    background:rgba(0,0,0,.35);
-    backdrop-filter:blur(8px);
-    border-radius:8px;
-
-    font-size:13px;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    color:#f2c15a;
-    font-weight:600;
-}
-
-/*======================================
-ARROWS
-======================================*/
-
-.arrow{
-
-    position:absolute;
-
-    top:50%;
-
-    transform:translateY(-50%);
-
-    border:none;
-
-    background:none;
-
-    color:#F5E09F;
-
-    font-size:2.4rem;
-
-    cursor:pointer;
-
-    transition:.35s;
-
-    z-index:20;
-
-}
-
-.arrow:hover{
-
-    color:#6A1B9A;
-
-    transform:translateY(-50%) scale(1.15);
-
-}
-
-.left{
-
-    left:35px;
-
-}
-
-.right{
-
-    right:35px;
-
-}
-
-/*======================================
-SKIN SELECTOR
-======================================*/
-
-.skin-selector{
-
-    width:100%;
-
-    max-width:1400px;
-
-    margin:35px auto 0;
-
-    display:grid;
-
-    grid-template-columns:repeat(6,1fr);
-
-    gap:18px;
-
-}
-
-
-/*======================================
-SKIN BUTTON
-======================================*/
-
-.skin-button{
-
-    background:#14111C;
-
-    border:2px solid transparent;
-
-    border-radius:15px;
-
-    overflow:hidden;
-
-    cursor:pointer;
-
-    transition:.35s;
-
-    padding:0;
-
-    position:relative;
-
-}
-
-
-/*======================================
-THUMBNAIL
-======================================*/
-
-.skin-button img{
-
-    width:100%;
-
-    aspect-ratio:16/9;
-
-    object-fit:cover;
-
-    display:block;
-
-}
-
-
-/*======================================
-NAME
-======================================*/
-
-.skin-button span{
-
-    display:block;
-
-    padding:12px 10px;
-
-    text-align:center;
-
-    color:#FFFFFF;
-
-    font-size:.9rem;
-
-    font-family:'Lora',serif;
-
-    background:#0D0B12;
-
-}
-
-
-/*======================================
-HOVER
-======================================*/
-
-.skin-button:hover{
-
-    transform:translateY(-6px);
-
-    border-color:#6A1B9A;
-
-    box-shadow:
-
-        0 0 20px rgba(106,27,154,.55);
-
-}
-
-
-/*======================================
-ACTIVE
-======================================*/
-
-.skin-button.active{
-
-    border-color:#6A1B9A;
-
-    box-shadow:
-
-        0 0 25px rgba(106,27,154,.9);
-
-}
-
-
-/*======================================
-ACTIVE NAME
-======================================*/
-
-.skin-button.active span{
-
-    color:#F5E09F;
-
-}
-
-
-/*======================================
-ACTIVE IMAGE
-======================================*/
-
-.skin-button.active img{
-
-    transform:scale(1.04);
-
-}
-
-.skin-button img{
-
-    transition:.35s;
-
-}
-
-
-/*======================================
-FADE ANIMATION
-======================================*/
-
-.fade{
-
-    opacity:0;
-
-    transform:scale(1.03);
-
-}
-
-.show{
-
-    opacity:1;
-
-    transform:scale(1);
-
-}
-
-
-/*======================================
-SMOOTH TRANSITIONS
-======================================*/
-
-#skinArtwork,
-#skinTitle,
-#skinDescription{
-
-    transition:.35s ease;
-
-}
-
-/*======================================
-RESPONSIVE
-======================================*/
-
-/* Laptop */
-@media (max-width:1200px){
-
-    .character-viewer{
-
-        height:600px;
-
-    }
-
-    .skin-info{
-
-        width:360px;
-
-        left:50px;
-
-    }
-
-    #skinTitle{
-
-        font-size:2.8rem;
-
-    }
-
-}
-
-
-/* Tablet */
-@media (max-width:900px){
-
-    .character-viewer{
-
-        height:500px;
-
-    }
-
-    .skin-info{
-
-        width:320px;
-
-        left:35px;
-
-    }
-
-    #skinTitle{
-
-        font-size:2.3rem;
-
-    }
-
-    #skinDescription{
-
-        font-size:.95rem;
-
-        line-height:1.7;
-
-    }
-
-}
-
-
-/*======================================
-MOBILE
-======================================*/
-
-@media (max-width:768px){
-
-    .character-viewer{
-
-        height:420px;
-
-    }
-
-    .skin-info{
-
-        width:80%;
-
-        left:25px;
-
-    }
-
-    .skin-category{
-
-        font-size:.75rem;
-
-        letter-spacing:3px;
-
-    }
-
-    #skinTitle{
-
-        font-size:1.9rem;
-
-        margin-bottom:15px;
-
-    }
-
-    #skinDescription{
-
-        font-size:.9rem;
-
-    }
-
-    .arrow{
-
-        font-size:1.8rem;
-
-    }
-
-    .left{
-
-        left:15px;
-
-    }
-
-    .right{
-
-        right:15px;
+        flex-direction:column;
 
     }
 
 
-    /* Skin Selector */
+    /* Contact */
 
-    .skin-selector{
-
-        display:flex;
-
-        overflow-x:auto;
-
-        gap:15px;
-
-        padding-bottom:15px;
-
-        scroll-behavior:smooth;
-
-        scrollbar-width:none;
-
-    }
-
-    .skin-selector::-webkit-scrollbar{
-
-        display:none;
-
-    }
-
-    .skin-button{
-
-        min-width:150px;
-
-        flex-shrink:0;
-
-    }
-
-}
-
-
-/*======================================
-KLEINE HANDYS
-======================================*/
-
-@media (max-width:480px){
-
-    .character-viewer{
-
-        height:360px;
-
-        border-radius:18px;
-
-    }
-
-    .skin-info{
-
-        left:18px;
-
-        bottom:20px;
-
-        width:85%;
-
-    }
-
-    #skinTitle{
-
-        font-size:1.6rem;
-
-    }
-
-    #skinDescription{
-
-        display:none;
-
-    }
-
-    .skin-button{
-
-        min-width:135px;
-
-    }
-
-}
-
-
-.wave-divider{
-
-    height:140px;
-
-    width:120px;
-
-    position:relative;
-}
-
-.wave-divider::before{
-
-    content:"";
-
-    position:absolute;
-
-    left:50%;
-
-    top:0;
-
-    width:4px;
-
-    height:100%;
-
-    background:#6A1B9A;
-
-    border-radius:50px;
-
-    transform:translateX(-50%);
-}
-
-.wave-divider::after{
-
-    content:"✦";
-
-    position:absolute;
-
-    top:50%;
-
-    left:50%;
-
-    transform:translate(-50%, -50%);
-
-    color:#E5DE9F;
-
-    font-size:1.4rem;
-}
-
-/* ======================
-   CONTACT
-====================== */
-
-#contact{
-
-    padding:120px 10%;
-}
-
-#contact h2{
-
-    text-align:center;
-
-    font-family:"Cinzel Decorative", serif;
-
-    color:#E5DE9F;
-
-    font-size:3rem;
-
-    margin-bottom:80px;
-}
-
-.contact-container{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    gap:100px;
-}
-
-.contact-info{
-
-    flex:1;
-}
-
-.contact-info h3{
-
-    color:#E5DE9F;
-
-    font-family:"Cinzel Decorative", serif;
-
-    margin-bottom:25px;
-}
-
-.contact-info p{
-
-    color:#d6d6d6;
-
-    line-height:2;
-
-    margin-bottom:20px;
-}
-
-.contact-details{
-
-    margin-top:40px;
-}
-
-.contact-item{
-
-    margin-bottom:25px;
-
-    line-height:1.8;
-}
-
-.contact-social{
-
-    flex:1;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:flex-start;
-
-}
-
-.contact-social h3{
-
-    color:#E5DE9F;
-
-    font-family:"Cinzel Decorative",serif;
-
-    margin-bottom:20px;
-
-}
-
-.social-text{
-
-    color:#d6d6d6;
-
-    line-height:1.8;
-
-    max-width:320px;
-
-    margin-bottom:30px;
-
-}
-
-.social-link{
-
-    display:inline-block;
-
-    padding:14px 28px;
-
-    border:2px solid #6A1B9A;
-
-    border-radius:15px;
-
-    color:#E5DE9F;
-
-    text-decoration:none;
-
-    font-family:"Cinzel Decorative",serif;
-
-    transition:.3s;
-
-}
-
-.social-link:hover{
-
-    background:#6A1B9A;
-
-    transform:translateY(-3px);
-
-}
-
-/* ==========================================
-   RESPONSIVE DESIGN
-========================================== */
-
-@media (max-width: 1000px){
-
-    .about-container,
-    .portfolio-container,
-    .vtuber-container,
     .contact-container{
 
         flex-direction:column;
+
         align-items:center;
-        gap:50px;
-
-    }
-
-    .showcase-title,
-    #about h2,
-    #vtuber h2,
-    #character-art h2,
-    #contact h2{
-
-        font-size:2.2rem;
-
-    }
-
-    .character-card,
-    .concept-container{
-
-        width:100%;
-
-    }
-
-    .show-btn{
-
-        padding:10px 18px;
-        font-size:.8rem;
-
-    }
-
-    .linktree-button{
-
-        width:100%;
 
     }
 
 }
 
-@media (max-width:700px){
+
+/* ==========================================================
+   SMARTPHONES
+========================================================== */
+
+@media(max-width:768px){
 
     .navbar{
 
         flex-direction:column;
+
         gap:20px;
+
+        text-align:center;
 
     }
 
     .nav-links{
 
         flex-wrap:wrap;
+
         justify-content:center;
-    }
-
-    h1{
-
-        font-size:2.5rem;
 
     }
 
-    .hero{
+    h2{
 
-        padding:100px 30px;
+        font-size:2.4rem !important;
+
+    }
+
+    .timeline-item{
+
+        width:100%;
+
+    }
+
+    .linktree-card{
+
+        width:100%;
 
     }
 
