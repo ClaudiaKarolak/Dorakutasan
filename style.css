@@ -1,4 +1,16 @@
+/* ==========================================================
+   GOOGLE FONTS
+   - Cinzel Decorative: Überschriften
+   - Lora: Fließtext
+========================================================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Lora:wght@400;500;600&display=swap');
+
+/* ==========================================================
+   GRUNDEINSTELLUNGEN
+   - Standardabstände entfernen
+   - Box-Modell vereinheitlichen
+========================================================== */
 
 *{
     margin:0;
@@ -6,9 +18,21 @@
     box-sizing:border-box;
 }
 
+/* ==========================================================
+   HTML
+   - Sanftes Scrollen zwischen den Bereichen
+========================================================== */
+
 html{
     scroll-behavior:smooth;
 }
+
+/* ==========================================================
+   BODY
+   - Hintergrundfarbe
+   - Standardschrift
+   - Standardtextfarbe
+========================================================== */
 
 body{
     background:#0D0B12;
@@ -16,9 +40,12 @@ body{
     font-family:"Lora", serif;
 }
 
-/* NAVBAR */
+/* ==========================================================
+   NAVIGATIONSBAR
+========================================================== */
 
 .navbar{
+
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -28,46 +55,73 @@ body{
     border-bottom:3px solid #6A1B9A;
 }
 
+/* Logo */
+
 .logo{
+
     font-family:"Cinzel Decorative", serif;
     color:#E5DE9F;
     font-size:2.5rem;
+
 }
 
+/* Untertitel unter dem Logo */
+
 .logo-subtitle{
+
     font-size:0.8rem;
     color:#cfcfcf;
     margin-top:5px;
+
 }
+
+/* Navigationslinks */
 
 .nav-links{
+
     display:flex;
     gap:30px;
+
     list-style:none;
+
 }
+
+/* Einzelne Links */
 
 .nav-links a{
+
     color:white;
     text-decoration:none;
+
 }
+
+/* Hovereffekt */
 
 .nav-links a:hover{
+
     color:#E5DE9F;
+
 }
 
-/* HERO */
+/* ==========================================================
+   HERO BEREICH
+   - Erste Ansicht nach dem Laden der Website
+========================================================== */
 
 .hero{
+
     display:flex;
     justify-content:center;
     align-items:center;
 
     height:90vh;
+
 }
 
-/* ==========================================
+/* ==========================================================
    HERO SHOWREEL
-========================================== */
+   - Großes Vorschaubild im Hero-Bereich
+========================================================== */
 
 .hero-showreel{
 
@@ -80,7 +134,10 @@ body{
     border-radius:25px;
 
     overflow:hidden;
+
 }
+
+/* Bild im Showreel */
 
 .hero-showreel img{
 
@@ -90,7 +147,13 @@ body{
     display:block;
 
     object-fit:cover;
+
 }
+
+/* ==========================================================
+   SEKTIONS-TRENNER
+   - Linie zwischen den einzelnen Bereichen
+========================================================== */
 
 .section-divider{
 
@@ -102,7 +165,10 @@ body{
 
     width:80%;
     margin:80px auto;
+
 }
+
+/* Linke und rechte Linie */
 
 .divider-line{
 
@@ -117,19 +183,29 @@ body{
         #6A1B9A,
         transparent
     );
+
 }
+
+/* Symbol in der Mitte */
 
 .divider-symbol{
 
     color:#E5DE9F;
     font-size:2rem;
+
 }
 
-/* About me */
+/* ==========================================================
+   ABOUT ME
+========================================================== */
 
 #about{
+
     padding:120px 10%;
+
 }
+
+/* Überschrift */
 
 #about h2{
 
@@ -142,7 +218,10 @@ body{
     font-size:3rem;
 
     margin-bottom:70px;
+
 }
+
+/* Layout für Bild und Text */
 
 .about-container{
 
@@ -157,17 +236,22 @@ body{
     max-width:1400px;
 
     margin:auto;
+
 }
 
-/* TEXT */
+/* ==========================================================
+   TEXTBEREICH
+========================================================== */
 
 .about-text{
 
     width:700px;
-  
-   text-align:center;
-  
+
+    text-align:center;
+
 }
+
+/* Absätze */
 
 .about-text p{
 
@@ -176,16 +260,22 @@ body{
     margin-bottom:25px;
 
     color:#d6d6d6;
+
 }
 
-/* FOTO */
+/* ==========================================================
+   PROFILBILD
+========================================================== */
 
 .about-image{
 
     width:400px;
 
     flex-shrink:0;
+
 }
+
+/* Bild */
 
 .about-photo{
 
@@ -207,6 +297,8 @@ body{
 
 }
 
+/* Hoveranimation */
+
 .about-photo:hover{
 
     transform:scale(1.03);
@@ -215,17 +307,21 @@ body{
 
 }
 
-/* TIMELINE */
+/* ==========================================================
+   ZEITLEISTE (TIMELINE)
+========================================================== */
 
 .timeline{
 
     margin-top:50px;
-  
-      display:flex;
+
+    display:flex;
     flex-direction:column;
     align-items:center;
-  
+
 }
+
+/* Einzelner Timeline-Eintrag */
 
 .timeline-item{
 
@@ -238,7 +334,10 @@ body{
     width:420px;
 
     margin-bottom:30px;
+
 }
+
+/* Jahreszahl */
 
 .timeline-item span{
 
@@ -253,6 +352,7 @@ body{
     text-align:right;
 
     margin-right:25px;
+
 }
 
 /* ======================
