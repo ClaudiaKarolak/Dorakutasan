@@ -87,7 +87,7 @@ const portfolioData = {
 
 },
    
- web:{
+web:{
 
     title:"Web Design",
 
