@@ -412,21 +412,17 @@ body{
 
 }
 
-/* ======================
+/* ==========================================
    BILDERGALERIE
-====================== */
+========================================== */
 
 .showcase-image{
 
     position:relative;
 
-    height:450px;
+    width:100%;
 
-    border:2px solid #6A1B9A;
-
-    border-radius:25px;
-
-    overflow:hidden;
+    height:520px;
 
     display:flex;
 
@@ -434,15 +430,26 @@ body{
 
     align-items:center;
 
-    margin-bottom:30px;
+    overflow:hidden;
 
     background:#0f0b14;
 
+    border:2px solid #6A1B9A;
+
+    border-radius:25px;
+
+    margin-bottom:30px;
+
 }
 
-/* Das Bild */
+
+/* ==========================================
+   PORTFOLIO BILD
+========================================== */
 
 .showcase-image img{
+
+    display:block;
 
     width:100%;
 
@@ -450,12 +457,13 @@ body{
 
     object-fit:contain;
 
-    transition:.35s;
+    pointer-events:none;
 
 }
 
+
 /* ==========================================
-   GALERIE PFEILE
+   PFEILE
 ========================================== */
 
 .slider-btn{
@@ -466,26 +474,36 @@ body{
 
     transform:translateY(-50%);
 
-    width:55px;
+    width:60px;
 
-    height:55px;
+    height:60px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
     border:none;
 
     border-radius:50%;
 
-    background:#111;
+    background:rgba(15,11,20,.95);
 
     color:#E5DE9F;
 
-    font-size:2rem;
+    font-size:40px;
 
     cursor:pointer;
 
-    transition:0.3s;
+    z-index:999;
 
-    z-index:10;
+    transition:.3s;
+
 }
+
+
+/* Hover */
 
 .slider-btn:hover{
 
@@ -493,9 +511,10 @@ body{
 
     color:white;
 
-    transform:translateY(-50%) scale(1.1);
+    transform:translateY(-50%) scale(1.08);
 
 }
+
 
 /* Linker Pfeil */
 
@@ -504,6 +523,7 @@ body{
     left:20px;
 
 }
+
 
 /* Rechter Pfeil */
 
