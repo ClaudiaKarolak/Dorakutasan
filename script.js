@@ -67,24 +67,25 @@ const portfolioData = {
 
 },
 
-    animation:{
+ animation:{
 
-        title:"Animation",
+    title:"Animation",
 
-        description:
-        "Grundlagen der Animation und Bewegungsdarstellung für digitale Medien.",
+    description:
+    "Erstellung kurzer 2D-Animationen und Motion-Designs mit Fokus auf flüssige Bewegungen, visuelle Effekte und kreative Bildkompositionen. Die Animationen entstehen durch die Kombination von Frame-by-Frame-Techniken in Clip Studio Paint, zusätzlichen 3D-Elementen aus Blender sowie der Nachbearbeitung und dem finalen Schnitt in DaVinci Resolve.",
 
-        software:[
-            "After Effects",
-            "Clip Studio Paint"
-        ],
+    software:[
+        "Clip Studio Paint",
+        "Blender",
+        "DaVinci Resolve"
+    ],
 
-        images:[
-            "images/animation.png"
-        ]
+    images:[
+        "images/Animation.gif",
+        "images/Animation 2.gif"
+    ]
 
-    },
-
+},
     web:{
 
         title:"Web Design",
