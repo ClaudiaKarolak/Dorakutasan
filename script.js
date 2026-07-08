@@ -301,61 +301,6 @@ window.addEventListener("DOMContentLoaded",()=>{
 
 });
 
-/* ==========================================
-   CONCEPT ART ZOOM
-========================================== */
-
-const conceptImage = document.getElementById("conceptImage");
-
-function zoomConcept(scale, x, y){
-
-    conceptImage.style.transformOrigin = `${x}% ${y}%`;
-    conceptImage.style.transform = `scale(${scale})`;
-
-}
-
-const views = {
-
-    full: [1, 50, 50],
-
-    front: [2.2, 14, 28],
-
-    back: [2.2, 14, 77],
-
-    left: [2.2, 46, 30],
-
-    right: [2.2, 46, 77],
-
-    face: [3.3, 82, 22],
-
-    backface: [3.3, 82, 76]
-
-};
-
-
-document.querySelectorAll(".show-btn").forEach(button=>{
-
-    button.addEventListener("click",()=>{
-
-        document.querySelectorAll(".show-btn").forEach(btn=>{
-
-            btn.classList.remove("active");
-
-        });
-
-        button.classList.add("active");
-
-        const data = views[button.dataset.view];
-
-        zoomConcept(data[0],data[1],data[2]);
-
-    });
-
-});
-
-zoomConcept(1,50,50);
-
-
 /*======================================
 DORAKUTASAN SKINS
 ======================================*/
