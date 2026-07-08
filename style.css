@@ -1102,7 +1102,7 @@ body{
    PFEILE
 ========================================================== */
 
-.arrow{
+.character-arrow{
 
     position:absolute;
 
@@ -1148,7 +1148,7 @@ body{
 
 /* Linker Pfeil */
 
-.arrow.left{
+.character-left{
 
     left:35px;
 
@@ -1157,7 +1157,7 @@ body{
 
 /* Rechter Pfeil */
 
-.arrow.right{
+.character-right{
 
     right:35px;
 
