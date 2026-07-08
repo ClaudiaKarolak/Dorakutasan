@@ -26,8 +26,6 @@ const portfolioData = {
 
     },
 
-
-
     illustration:{
 
         title:"Digital Illustration",
@@ -49,27 +47,25 @@ const portfolioData = {
 
     },
 
-
-
     "3d":{
 
-        title:"3D Modelling",
+    title:"3D Modelling",
 
-        description:
-        "Erstellung eigener 3D-Modelle und Assets mit Fokus auf Charaktere und VTuber-Modelle.",
+    description:
+    "Entwicklung eigener 3D-Modelle, Charaktere und Umgebungen mit Fokus auf VTuber, Animationen und Game-Assets. Neben der Modellierung gehören auch Rigging, Texturierung und das Testen der Modelle in Programmen wie MikuMikuDance zum kreativen Workflow.",
 
-        software:[
-            "Blender",
-            "VRoid Studio"
-        ],
+    software:[
+        "Blender",
+        "MikuMikuDance",
+        "VRoid Studio"
+    ],
 
-        images:[
-            "images/3d.png"
-        ]
+    images:[
+        "images/Blender.png",
+        "images/Character miku.png"
+    ]
 
-    },
-
-
+},
 
     animation:{
 
@@ -89,8 +85,6 @@ const portfolioData = {
 
     },
 
-
-
     web:{
 
         title:"Web Design",
@@ -109,8 +103,6 @@ const portfolioData = {
         ]
 
     },
-
-
 
     uiux:{
 
