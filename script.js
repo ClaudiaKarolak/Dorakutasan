@@ -92,7 +92,7 @@ web:{
     title:"Web Design",
 
     description:
-    "Konzeption, Gestaltung und Entwicklung moderner Webseiten mit HTML, CSS und JavaScript. Von ersten Layouts über interaktive Animationen bis hin zur vollständigen Umsetzung eigener Projekte – darunter auch diese Portfolio-Webseite. Zusätzlich sammle ich Erfahrungen mit Entwicklungsumgebungen, Online-Prototyping und Versionsverwaltung.",
+    "Konzeption, Gestaltung und Entwicklung moderner Webseiten mit HTML, CSS und JavaScript. Von ersten Layouts über interaktive Animationen bis hin zur vollständigen Umsetzung eigener Projekte darunter auch diese Portfolio-Webseite.",
 
     software:[
         "CodePen",
