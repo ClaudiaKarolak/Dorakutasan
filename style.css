@@ -353,11 +353,11 @@ body{
 
     margin-right:25px;
 
-}
+   }
 
-/* ======================
+/* ==========================================================
    PORTFOLIO
-====================== */
+========================================================== */
 
 #portfolio{
 
@@ -365,34 +365,28 @@ body{
 
 }
 
-/* ======================
-   ÜBERSCHRIFT
-====================== */
+/* ==========================================================
+   PORTFOLIO ÜBERSCHRIFT
+========================================================== */
 
 #portfolio h2{
 
     text-align:center;
-
     font-family:"Cinzel Decorative", serif;
-
     color:#E5DE9F;
-
     font-size:3rem;
-
     margin-bottom:40px;
 
 }
 
-/* ======================
-   EINLEITUNG
-====================== */
+/* ==========================================================
+   EINLEITUNGSTEXT
+========================================================== */
 
 .portfolio-intro{
 
     text-align:center;
-
     max-width:800px;
-
     margin:0 auto 70px auto;
 
 }
@@ -400,41 +394,35 @@ body{
 .portfolio-intro p{
 
     color:#d6d6d6;
-
     line-height:1.8;
-
     margin-bottom:15px;
 
 }
 
-/* ======================
-   LAYOUT
-====================== */
+/* ==========================================================
+   GESAMTES PORTFOLIO LAYOUT
+========================================================== */
 
 .portfolio-container{
 
     display:flex;
-
     gap:50px;
-
     align-items:flex-start;
 
 }
 
-/* ======================
+/* ==========================================================
    LINKES MENÜ
-====================== */
+========================================================== */
 
 .skill-menu{
 
     width:300px;
 
     border:2px solid #6A1B9A;
-
     border-radius:25px;
 
     overflow:hidden;
-
     flex-shrink:0;
 
 }
@@ -448,30 +436,29 @@ body{
     padding:22px 22px 22px 45px;
 
     cursor:pointer;
+    transition:.3s;
 
-    transition:0.3s;
-
-    border-bottom:1px solid rgba(255,255,255,0.08);
+    border-bottom:1px solid rgba(255,255,255,.08);
 
 }
 
-/* Goldenes Symbol */
+/* Symbol links */
 
 .skill::before{
 
     content:"◈";
 
     position:absolute;
-
     left:18px;
 
     color:#E5DE9F;
 
     opacity:0;
-
     transition:.3s;
 
 }
+
+/* Symbol anzeigen */
 
 .skill:hover::before,
 .skill.active::before{
@@ -485,12 +472,11 @@ body{
 .skill:hover{
 
     background:rgba(106,27,154,.15);
-
     color:#E5DE9F;
 
 }
 
-/* Aktiver Bereich */
+/* Aktiver Menüpunkt */
 
 .skill.active{
 
@@ -502,9 +488,9 @@ body{
 
 }
 
-/* ======================
+/* ==========================================================
    RECHTE SEITE
-====================== */
+========================================================== */
 
 .portfolio-showcase{
 
@@ -512,22 +498,19 @@ body{
 
 }
 
-/* ==========================================
+/* ==========================================================
    BILDERGALERIE
-========================================== */
+========================================================== */
 
 .showcase-image{
 
     position:relative;
 
     width:100%;
-
     height:520px;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
     overflow:hidden;
@@ -535,36 +518,34 @@ body{
     background:#0f0b14;
 
     border:2px solid #6A1B9A;
-
     border-radius:25px;
 
     margin-bottom:30px;
 
 }
 
-
-/* ==========================================
+/* ==========================================================
    PORTFOLIO BILD
-========================================== */
+========================================================== */
 
 .showcase-image img{
 
-    display:block;
-
     width:100%;
-
     height:100%;
+
+    display:block;
 
     object-fit:contain;
 
-    pointer-events:none;
+    position:relative;
+
+    z-index:1;
 
 }
 
-
-/* ==========================================
-   PFEILE
-========================================== */
+/* ==========================================================
+   SLIDER PFEILE
+========================================================== */
 
 .slider-btn{
 
@@ -574,31 +555,30 @@ body{
 
     transform:translateY(-50%);
 
-    width:60px;
-
-    height:60px;
+    width:65px;
+    height:65px;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
     border:none;
+    outline:none;
 
     border-radius:50%;
 
-    background:rgba(15,11,20,.95);
+    background:#111;
 
     color:#E5DE9F;
 
-    font-size:40px;
+    font-size:34px;
+    font-weight:bold;
 
     cursor:pointer;
 
-    z-index:999;
+    z-index:9999;
 
-    transition:.3s;
+    transition:.3s ease;
 
 }
 
@@ -611,7 +591,7 @@ body{
 
     color:white;
 
-    transform:translateY(-50%) scale(1.08);
+    transform:translateY(-50%) scale(1.1);
 
 }
 
@@ -620,7 +600,7 @@ body{
 
 .slider-btn.left{
 
-    left:20px;
+    left:30px;
 
 }
 
@@ -629,7 +609,7 @@ body{
 
 .slider-btn.right{
 
-    right:20px;
+    right:30px;
 
 }
 
