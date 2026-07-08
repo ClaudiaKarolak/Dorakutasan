@@ -936,56 +936,164 @@ body{
 
     font-size:3rem;
 
-    color:var(--gold);
+    color:#E5DE9F;
 
-    margin-bottom:80px;
-
-}
-
-
-/* ==========================================================
-   GESAMTES LAYOUT
-========================================================== */
-
-.character-container{
-
-    display:flex;
-
-    gap:60px;
-
-    align-items:center;
+    margin-bottom:70px;
 
 }
 
 
 /* ==========================================================
-   BILDGALERIE
+   GROSSER CHARACTER VIEWER
 ========================================================== */
 
-.character-showcase{
+.character-viewer{
 
     position:relative;
 
-    flex:1;
+    width:100%;
 
-    display:flex;
+    height:760px;
 
-    justify-content:center;
+    overflow:hidden;
 
-    align-items:center;
+    border-radius:30px;
+
+    border:2px solid #6A1B9A;
+
+    background:#120d17;
+
+    box-shadow:0 0 35px rgba(106,27,154,.30);
 
 }
 
 
-.character-showcase img{
+/* ==========================================================
+   GROSSES ARTWORK
+========================================================== */
+
+#skinArtwork{
 
     width:100%;
 
-    max-width:700px;
+    height:100%;
 
-    border:2px solid var(--purple);
+    display:block;
 
-    border-radius:25px;
+    object-fit:cover;
+
+    transition:.45s ease;
+
+}
+
+
+/* ==========================================================
+   DUNKLER VERLAUF UNTEN
+========================================================== */
+
+.artwork-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+
+        to top,
+
+        rgba(0,0,0,.92) 8%,
+
+        rgba(0,0,0,.65) 30%,
+
+        rgba(0,0,0,0) 65%
+
+    );
+
+}
+
+
+/* ==========================================================
+   TEXTBOX
+========================================================== */
+
+.skin-info{
+
+    position:absolute;
+
+    left:60px;
+
+    bottom:60px;
+
+    max-width:520px;
+
+    z-index:5;
+
+}
+
+
+/* Titel */
+
+.skin-info h3{
+
+    font-family:"Cinzel Decorative", serif;
+
+    font-size:3rem;
+
+    color:#E5DE9F;
+
+    margin-bottom:15px;
+
+}
+
+
+/* League Collection */
+
+.skin-category{
+
+    display:inline-block;
+
+    margin-bottom:22px;
+
+    padding:10px 20px;
+
+    border:1px solid #E5DE9F;
+
+    border-radius:30px;
+
+    color:#E5DE9F;
+
+    font-size:.9rem;
+
+    letter-spacing:2px;
+
+}
+
+
+/* Beschreibung */
+
+.skin-info p{
+
+    color:#f0f0f0;
+
+    line-height:1.8;
+
+    font-size:1rem;
+
+    margin-bottom:18px;
+
+}
+
+
+/* Inspiration */
+
+#skinInspiration{
+
+    color:#E5DE9F;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
 
 }
 
@@ -1002,83 +1110,252 @@ body{
 
     transform:translateY(-50%);
 
-    width:60px;
+    width:65px;
 
-    height:60px;
+    height:65px;
 
     border:none;
 
     border-radius:50%;
 
-    background:rgba(15,11,20,.9);
+    background:rgba(18,13,23,.9);
 
-    color:var(--gold);
+    color:#E5DE9F;
 
-    font-size:34px;
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
     cursor:pointer;
 
     transition:.3s;
 
+    z-index:20;
+
 }
 
 
-/* Hover */
-
 .arrow:hover{
 
-    background:var(--purple);
+    background:#6A1B9A;
 
-    color:white;
+    transform:translateY(-50%) scale(1.08);
 
 }
 
 
 /* Linker Pfeil */
 
-.arrow-left{
+.arrow.left{
 
-    left:25px;
+    left:35px;
 
 }
 
 
 /* Rechter Pfeil */
 
-.arrow-right{
+.arrow.right{
 
-    right:25px;
+    right:35px;
+
+}
+
+
+.arrow i{
+
+    font-size:28px;
+
+}
+
+/* ==========================================================
+   SKIN SELECTOR
+========================================================== */
+
+.skin-selector{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:25px;
+
+    margin-top:40px;
 
 }
 
 
 /* ==========================================================
-   BESCHREIBUNG
+   EINZELNE SKIN KARTE
 ========================================================== */
 
-.character-info{
+.skin-button{
 
-    flex:1;
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:18px;
+
+    background:#120d17;
+
+    border:2px solid #2b2136;
+
+    border-radius:22px;
+
+    cursor:pointer;
+
+    transition:.35s ease;
 
 }
 
 
-.character-info h3{
+/* Hover */
 
-    color:var(--gold);
+.skin-button:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#6A1B9A;
+
+    box-shadow:0 0 22px rgba(106,27,154,.45);
+
+}
+
+
+/* Aktive Karte */
+
+.skin-button.active{
+
+    border-color:#E5DE9F;
+
+    box-shadow:0 0 25px rgba(229,222,159,.35);
+
+}
+
+
+/* ==========================================================
+   THUMBNAIL
+========================================================== */
+
+.skin-button img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+    margin-bottom:15px;
+
+}
+
+
+/* ==========================================================
+   NAME DER SKIN
+========================================================== */
+
+.skin-button span{
+
+    color:#E5DE9F;
 
     font-family:"Cinzel Decorative", serif;
 
-    margin-bottom:20px;
+    text-align:center;
+
+    font-size:1rem;
 
 }
 
 
-.character-info p{
+/* ==========================================================
+   KLEINER GLOW
+========================================================== */
 
-    color:var(--text);
+.skin-button::after{
 
-    line-height:1.9;
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:22px;
+
+    pointer-events:none;
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+
+.skin-button:hover::after{
+
+    opacity:1;
+
+    box-shadow:0 0 35px rgba(106,27,154,.25);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:1000px){
+
+    .character-viewer{
+
+        height:620px;
+
+    }
+
+    .skin-info{
+
+        left:35px;
+
+        bottom:35px;
+
+    }
+
+    .skin-info h3{
+
+        font-size:2.3rem;
+
+    }
+
+}
+
+
+@media(max-width:700px){
+
+    .character-viewer{
+
+        height:500px;
+
+    }
+
+    .skin-selector{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .arrow{
+
+        width:55px;
+
+        height:55px;
+
+    }
 
 }
 
