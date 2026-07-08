@@ -108,26 +108,24 @@ web:{
 
 },
 
-    uiux:{
+ video:{
 
-        title:"UI / UX Basics",
+    title:"Video Editing",
 
-        description:
-        "Erste Erfahrungen im Bereich Benutzeroberflächen, Nutzerführung und Interface Design.",
+    description:
+    "Erstellung kreativer Edits und kurzer Videos mit Fokus auf flüssige Übergänge, visuelle Effekte und stimmige Bildkompositionen. Dabei kombiniere ich Animationen, Sounddesign und Color Grading, um dynamische Inhalte für Social Media und persönliche Projekte zu erstellen.",
 
-        software:[
-            "Figma",
-            "Design"
-        ],
+    software:[
+        "Clip Studio Paint",
+        "DaVinci Resolve"
+    ],
 
-        images:[
-            "images/uiux.png"
-        ]
+    images:[
+        "images/edit.gif"
+    ]
 
-    }
-
-};
-
+}
+    
 /* ==========================================
    PORTFOLIO GALERIE
 ========================================== */
