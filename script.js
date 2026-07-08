@@ -49,82 +49,84 @@ const portfolioData = {
 
     "3d":{
 
-    title:"3D Modelling",
+        title:"3D Modelling",
 
-    description:
-    "Entwicklung eigener 3D-Modelle, Charaktere und Umgebungen mit Fokus auf VTuber, Animationen und Game-Assets. Neben der Modellierung gehören auch Rigging, Texturierung und das Testen der Modelle in Programmen wie MikuMikuDance zum kreativen Workflow.",
+        description:
+        "Entwicklung eigener 3D-Modelle, Charaktere und Umgebungen mit Fokus auf VTuber, Animationen und Game-Assets. Neben der Modellierung gehören auch Rigging, Texturierung und das Testen der Modelle in Programmen wie MikuMikuDance zum kreativen Workflow.",
 
-    software:[
-        "Blender",
-        "MikuMikuDance",
-        "VRoid Studio"
-    ],
+        software:[
+            "Blender",
+            "MikuMikuDance",
+            "VRoid Studio"
+        ],
 
-    images:[
-        "images/Blender.png",
-        "images/Character miku.png"
-    ]
+        images:[
+            "images/Blender.png",
+            "images/Character miku.png"
+        ]
 
-},
+    },
 
- animation:{
+    animation:{
 
-    title:"Animation",
+        title:"Animation",
 
-    description:
-    "Erstellung kurzer 2D-Animationen mit Fokus auf flüssige Bewegungen, visuelle Effekte und kreative Bildkompositionen. Zum Einsatz kommen Frame-by-Frame-Techniken in Clip Studio Paint, ergänzt durch Animationen und 3D-Elemente in Blender sowie die Nachbearbeitung und den Videoschnitt in DaVinci Resolve.",
+        description:
+        "Erstellung kurzer 2D-Animationen mit Fokus auf flüssige Bewegungen, visuelle Effekte und kreative Bildkompositionen. Zum Einsatz kommen Frame-by-Frame-Techniken in Clip Studio Paint, ergänzt durch Animationen und 3D-Elemente in Blender sowie die Nachbearbeitung und den Videoschnitt in DaVinci Resolve.",
 
-    software:[
-        "Clip Studio Paint",
-        "Blender",
-        "DaVinci Resolve"
-    ],
+        software:[
+            "Clip Studio Paint",
+            "Blender",
+            "DaVinci Resolve"
+        ],
 
-    images:[
-        "images/Animation.gif",
-        "images/Animation 2.gif"
-    ]
+        images:[
+            "images/Animation.gif",
+            "images/Animation 2.gif"
+        ]
 
-},
-   
-web:{
+    },
 
-    title:"Web Design",
+    web:{
 
-    description:
-    "Konzeption, Gestaltung und Entwicklung moderner Webseiten mit HTML, CSS und JavaScript. Von ersten Layouts über interaktive Animationen bis hin zur vollständigen Umsetzung eigener Projekte darunter auch diese Portfolio-Webseite.",
+        title:"Web Design",
 
-    software:[
-        "CodePen",
-        "Visual Studio Code",
-        "GitHub"
-    ],
+        description:
+        "Konzeption, Gestaltung und Entwicklung moderner Webseiten mit HTML, CSS und JavaScript. Von ersten Layouts über interaktive Animationen bis hin zur vollständigen Umsetzung eigener Projekte – darunter auch diese Portfolio-Webseite.",
 
-    images:[
-        "images/code pen.png",
-        "images/Visual studio.png",
-        "images/Git Hub.png"
-    ]
+        software:[
+            "CodePen",
+            "Visual Studio Code",
+            "GitHub"
+        ],
 
-},
+        images:[
+            "images/code pen.png",
+            "images/Visual studio.png",
+            "images/Git Hub.png"
+        ]
 
- video:{
+    },
 
-    title:"Video Editing",
+    video:{
 
-    description:
-    "Erstellung kreativer Edits und kurzer Videos mit Fokus auf flüssige Übergänge, visuelle Effekte und stimmige Bildkompositionen. Dabei kombiniere ich Animationen, Sounddesign und Color Grading, um dynamische Inhalte für Social Media und persönliche Projekte zu erstellen.",
+        title:"Video Editing",
 
-    software:[
-        "Clip Studio Paint",
-        "DaVinci Resolve"
-    ],
+        description:
+        "Erstellung kreativer Video-Edits mit Fokus auf flüssige Übergänge, Animationen, Effekte und Color Grading. Meine Projekte kombinieren digitale Illustrationen, Animationen und Videoschnitt zu kurzen, dynamischen Clips für Social Media und persönliche Projekte.",
 
-    images:[
-        "images/edit.gif"
-    ]
+        software:[
+            "Clip Studio Paint",
+            "DaVinci Resolve"
+        ],
 
-}
+        images:[
+            "images/Edit.gif"
+        ]
+
+    }
+
+};
     
 /* ==========================================
    PORTFOLIO GALERIE
