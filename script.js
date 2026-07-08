@@ -86,24 +86,27 @@ const portfolioData = {
     ]
 
 },
-    web:{
+   
+ web:{
 
-        title:"Web Design",
+    title:"Web Design",
 
-        description:
-        "Konzeption und Entwicklung moderner Webseiten mit HTML, CSS und JavaScript.",
+    description:
+    "Konzeption, Gestaltung und Entwicklung moderner Webseiten mit HTML, CSS und JavaScript. Von ersten Layouts über interaktive Animationen bis hin zur vollständigen Umsetzung eigener Projekte – darunter auch diese Portfolio-Webseite. Zusätzlich sammle ich Erfahrungen mit Entwicklungsumgebungen, Online-Prototyping und Versionsverwaltung.",
 
-        software:[
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ],
+    software:[
+        "CodePen",
+        "Visual Studio Code",
+        "GitHub"
+    ],
 
-        images:[
-            "images/web.png"
-        ]
+    images:[
+        "images/code pen.png",
+        "images/Visual studio.png",
+        "images/Git Hub.png"
+    ]
 
-    },
+},
 
     uiux:{
 
