@@ -1137,7 +1137,7 @@ body{
 }
 
 
-.arrow:hover{
+.character-arrow:hover{
 
     background:#6A1B9A;
 
@@ -1164,7 +1164,7 @@ body{
 }
 
 
-.arrow i{
+.character-arrow i{
 
     font-size:28px;
 
@@ -1349,19 +1349,25 @@ body{
 
     }
 
-    .arrow{
+ .character-arrow{
 
-        width:55px;
+    width:55px;
 
-        height:55px;
+    height:55px;
 
-    }
+}
 
 }
 
 /* ==========================================================
    CONTACT
 ========================================================== */
+
+.contact-social{
+
+    width:420px;
+
+}
 
 #contact{
 
