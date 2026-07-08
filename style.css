@@ -1363,12 +1363,6 @@ body{
    CONTACT
 ========================================================== */
 
-.contact-social{
-
-    width:420px;
-
-}
-
 #contact{
 
     padding:120px 10%;
@@ -1396,47 +1390,94 @@ body{
 
 
 /* ==========================================================
-   LAYOUT
+   CONTACT LAYOUT
 ========================================================== */
 
 .contact-container{
 
+    max-width:1400px;
+
+    margin:0 auto;
+
     display:flex;
+
+    align-items:flex-start;
 
     justify-content:space-between;
 
-    gap:80px;
+    gap:120px;
 
 }
 
 
 /* ==========================================================
-   INFORMATIONEN
+   LINKER BEREICH
+   Kontaktinformationen
 ========================================================== */
 
 .contact-info{
 
-    flex:1;
+    flex:2;
 
 }
-
 
 .contact-info h3{
 
-    margin-bottom:20px;
-
-    color:var(--gold);
+    margin-bottom:25px;
 
     font-family:"Cinzel Decorative", serif;
 
-}
+    font-size:2rem;
 
+    color:var(--gold);
+
+}
 
 .contact-info p{
 
     color:var(--text);
 
     line-height:2;
+
+    margin-bottom:20px;
+
+}
+
+.contact-info strong{
+
+    color:white;
+
+}
+
+.contact-info a{
+
+    color:#B05CFF;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.contact-info a:hover{
+
+    color:var(--gold);
+
+}
+
+
+/* ==========================================================
+   RECHTER BEREICH
+   Social Media Card
+========================================================== */
+
+.contact-social{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:flex-end;
 
 }
 
@@ -1447,6 +1488,10 @@ body{
 
 .linktree-card{
 
+    width:380px;
+
+    min-height:320px;
+
     display:flex;
 
     flex-direction:column;
@@ -1455,9 +1500,7 @@ body{
 
     align-items:center;
 
-    width:420px;
-
-    height:320px;
+    text-align:center;
 
     background:var(--card);
 
@@ -1467,28 +1510,25 @@ body{
 
     text-decoration:none;
 
-    transition:.3s;
+    transition:.35s;
 
 }
-
 
 .linktree-card:hover{
 
     transform:translateY(-8px);
 
-    box-shadow:0 0 25px rgba(106,27,154,.45);
+    box-shadow:0 0 30px rgba(106,27,154,.45);
 
 }
-
 
 .linktree-icon{
 
     font-size:4rem;
 
-    margin-bottom:20px;
+    margin-bottom:25px;
 
 }
-
 
 .linktree-card h4{
 
@@ -1502,27 +1542,31 @@ body{
 
 }
 
-
 .linktree-card p{
 
     width:80%;
-
-    text-align:center;
 
     color:var(--text);
 
     line-height:1.8;
 
-    margin-bottom:30px;
+    margin-bottom:25px;
 
 }
-
 
 .linktree-card span{
 
     color:var(--gold);
 
     font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.linktree-card:hover span{
+
+    color:white;
 
 }
 
