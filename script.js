@@ -72,7 +72,7 @@ const portfolioData = {
     title:"Animation",
 
     description:
-    "Erstellung kurzer 2D-Animationen und Motion-Designs mit Fokus auf flüssige Bewegungen, visuelle Effekte und kreative Bildkompositionen. Die Animationen entstehen durch die Kombination von Frame-by-Frame-Techniken in Clip Studio Paint, zusätzlichen 3D-Elementen aus Blender sowie der Nachbearbeitung und dem finalen Schnitt in DaVinci Resolve.",
+"Erstellung kurzer 2D-Animationen mit Fokus auf flüssige Bewegungen, visuelle Effekte und kreative Bildkompositionen. Zum Einsatz kommen Frame-by-Frame-Techniken in Clip Studio Paint, ergänzt durch Animationen und 3D-Elemente in Blender sowie die Nachbearbeitung und den Videoschnitt in DaVinci Resolve.",
 
     software:[
         "Clip Studio Paint",
